@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>127STRM | 이벤트팀</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="strm_event_1.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">NCT127STRM</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_home.html">홈</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="strm_event_1.html">이벤트팀</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">계정팀</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">정산팀</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">차트팀</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">총공관리팀</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">메뉴</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">이벤트팀</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="strm_event_1.html">이벤트 일정 정리</a>
+                                    <a class="dropdown-item" href="#!">이벤트 진행 정리</a>
+                                    <a class="dropdown-item" href="#!">이벤트 목록 정리</a>
+                                    <a class="dropdown-item" href="strm_event_4.html">이벤트팀 업무</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid" style="width:95%">
+            <header>
+                <h4 class="display-4 mb-4 text-center">NCT127 The 4th Repackage: Ay-Yo</h4>
+                <h7 class="p-1">이벤트 이름이 잘린다면, 상단 왼쪽 "메뉴" 버튼을 눌러 옆 메뉴들을 없애주세요!</h7>
+                <div class="row d-none d-sm-flex p-1 bg-dark text-white">
+                <h5 class="col-sm p-1 text-center">일요일</h5>
+                <h5 class="col-sm p-1 text-center">월요일</h5>
+                <h5 class="col-sm p-1 text-center">화요일</h5>
+                <h5 class="col-sm p-1 text-center">수요일</h5>
+                <h5 class="col-sm p-1 text-center">목요일</h5>
+                <h5 class="col-sm p-1 text-center">금요일</h5>
+                <h5 class="col-sm p-1 text-center">토요일</h5>
+                </div>
+            </header>
+            <div class="row border border-right-0 border-bottom-0">
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">22</span>
+                    <small class="col d-sm-none text-center text-muted">일요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">23</span>
+                    <small class="col d-sm-none text-center text-muted">월요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">24</span>
+                    <small class="col d-sm-none text-center text-muted">화요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">25</span>
+                        <small class="col d-sm-none text-center text-muted">수요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">26</span>
+                        <small class="col d-sm-none text-center text-muted">목요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">27</span>
+                        <small class="col d-sm-none text-center text-muted">금요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 예고</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">28</span>
+                        <small class="col d-sm-none text-center text-muted">토요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                </div>
+                <div class="w-100"></div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">29</span>
+                        <small class="col d-sm-none text-center text-muted">일요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">30</span>
+                        <small class="col d-sm-none text-center text-muted">목요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                    <h5 class="row align-items-center">
+                        <span class="date col-1">31</span>
+                        <small class="col d-sm-none text-center text-muted">목요일</small>
+                        <span class="col-1"></span>
+                    </h5>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                    <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">1</span>
+                    <small class="col d-sm-none text-center text-muted">수요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">2</span>
+                    <small class="col d-sm-none text-center text-muted">목요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">3</span>
+                    <small class="col d-sm-none text-center text-muted">금요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="도장깨기">도장깨기 공지+이벤트</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="주간 누적다운">주간 누적다운</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">4</span>
+                    <small class="col d-sm-none text-center text-muted">토요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="주간 누적다운">주간 누적다운</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="w-100"></div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">5</span>
+                    <small class="col d-sm-none text-center text-muted">일요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="주간 누적다운">주간 누적다운</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="유튜브 쇼츠/틱톡">유튜브 쇼츠/틱톡</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white" title="블로그 챌린지(공유+스밍)">네이버 블로그 챌린지</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">6</span>
+                    <small class="col d-sm-none text-center text-muted">월요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">7</span>
+                    <small class="col d-sm-none text-center text-muted">화요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">8</span>
+                    <small class="col d-sm-none text-center text-muted">수요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">9</span>
+                    <small class="col d-sm-none text-center text-muted">목요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="실시간 투표">실시간 투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">10</span>
+                    <small class="col d-sm-none text-center text-muted">금요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">11</span>
+                    <small class="col d-sm-none text-center text-muted">토요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="실시간 투표">실시간 투표</a>
+                </div>
+                <div class="w-100"></div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">12</span>
+                    <small class="col d-sm-none text-center text-muted">일요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 음원스밍">일일 음원스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="일일 뮤비스밍">일일 뮤비스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="사전투표">사전투표</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="실시간 투표">실시간 투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">13</span>
+                    <small class="col d-sm-none text-center text-muted">월요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">14</span>
+                    <small class="col d-sm-none text-center text-muted">화요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">15</span>
+                    <small class="col d-sm-none text-center text-muted">수요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">16</span>
+                    <small class="col d-sm-none text-center text-muted">목요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="실시간 투표">실시간 투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">17</span>
+                    <small class="col d-sm-none text-center text-muted">금요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">18</span>
+                    <small class="col d-sm-none text-center text-muted">토요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="실시간 투표">실시간 투표</a>
+                </div>
+                <div class="w-100"></div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">19</span>
+                    <small class="col d-sm-none text-center text-muted">일요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-warning text-black" title="3주 누적스밍">3주 누적스밍</a>
+                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-secondary text-white" title="실시간 투표">실시간 투표</a>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">20</span>
+                    <small class="col d-sm-none text-center text-muted">월요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">21</span>
+                    <small class="col d-sm-none text-center text-muted">화요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">22</span>
+                    <small class="col d-sm-none text-center text-muted">수요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">23</span>
+                    <small class="col d-sm-none text-center text-muted">목요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">24</span>
+                    <small class="col d-sm-none text-center text-muted">금요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                <h5 class="row align-items-center">
+                    <span class="date col-1">25</span>
+                    <small class="col d-sm-none text-center text-muted">토요일</small>
+                    <span class="col-1"></span>
+                </h5>
+                <p class="d-sm-none">No events</p>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- partial -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
