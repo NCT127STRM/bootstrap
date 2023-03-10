@@ -6860,7 +6860,7 @@ textarea.form-control-lg {
 .border-top-0 {
   border-top: 0 !important;
 }
-
+.btn-group-justified>.btn-group .dropdown-menu{left:auto}[data-toggle=buttons]>.btn input[type=checkbox],[data-toggle=buttons]>.btn input[type=radio],[data-toggle=buttons]>.btn-group>.btn input[type=checkbox],[data-toggle=buttons]>.btn-group>.btn input[type=radio]{position:absolute;clip:rect(0,0,0,0);pointer-events:none}
 .border-end {
   border-right: 1px solid #dee2e6 !important;
 }

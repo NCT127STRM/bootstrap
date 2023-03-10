@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>127STRM | 스밍팀 홈</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet"/>
+        <style>
+            #watermark {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -150px;
+                margin-top: -150px;
+                opacity:0.5;
+                z-index:99;
+                color:black;
+            }
+            .collapse-content {
+                padding: 1rem;
+            }
+            .collapsible {
+                background-color: var(--bs-success);
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                width: 100%;
+                border: none;
+                border-radius: 15px;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+            .content-content {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                border-radius: 15px;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .time-table {
+                width: 30%;
+                margin-left: 2rem;
+            }
+            @media (max-width: 576px) {
+                .time-table {
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">NCT127STRM</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_home.html">홈</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_event/strm_event_1.html">이벤트팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">계정팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">정산팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="strm_chart1.html">차트팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">총공관리팀</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">메뉴</button>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="collapse-content">
+                    <button type="button" class="collapsible">1) 차트팀 구성 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>07-25시 총 19타임으로 한 사람당 2-3타임을 업로드하기 위해선 7-8명의 인원이 필요</li>
+                                <li>인원 모집 시 기존 팀원들끼리 시간 배분 후, 부족한 시간대를 같이 공고하는 것이 좋음</li>
+                                <li><strong>강퇴 조건: 담당시간대 업무 누락 3회 이상 (3번째 누락시 탈퇴처리)</strong></li>
+                            </ul>  
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">2-1) 차트팀 활동 (컴백 전) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 컴백 전</strong></p>
+                            <ul>
+                                <li>시간 분배</li>
+                                <li>활동 이모지 정하기</li>
+                            </ul> 
+                            <p><strong>2. 전체 혹은 이벤트팀 의뢰사항</strong></p>
+                            <ul>
+                                <li>스밍독려 해시 정하기 ex)시즈니랑_붙어있자_STICKER, #미안_나는질주밖에모르는_질주니</li>
+                            </ul>
+                            <p><strong>3. 기타사항</strong></p>
+                            <ul>
+                                <li>새로 들어오신 분, 가이섬 및 업로드 방법 알려드리기</li>
+                                <li>모의 업로드 컴백 전 날, 혹은 화력체크 시 하루 동안 진행하기</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">2-2) 차트팀 활동 (활동 중) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 차트 업로드</strong></p>
+                            <ul>
+                                <li>오전-오후 시간대: 차트봇</li>
+                                <li>차트봇은 정각 5분에 업로드되며 아침 7시만 10분에 업로드, 5분에 업로드가 되지 않았다면 수동으로 업로드 후, 단톡방에 차트봇 이상 여부 보고</li>
+                                <li><strong>차트봇 서버에 이상 시 공지 후, 즉시 수동으로 각자 시간대 업로드 (차트봇 재가동전까지)</strong></li>
+                            </ul> 
+                            <p><strong>2. 차트 독려&답글 막기</strong></p>
+                            <ul>
+                                <li>차트봇은 답글막기 기능이 없음, 본인 시간대 10분 전에 답글 막기</li>
+                                <li>적절한 짤과 함께 인용 리트윗으로 독려, 칭찬하기!</li>
+                                <li>25시(새벽 1시) 프리징 시간대 담당자는 격려 멘트</li>
+                                <li>스밍팀 각자 시간대 핸드폰 알람 설정 권장</li>
+                                <img src="chart_alaram.png" style="width: 300px; height: 250px;">
+                                <li>차트팀 트위터 알림 모두받기 알람설정하여 누락 확인 (최소 팀장은 필수)</li>
+                                <li><strong>★★★ 업로드 양식은 별첨의 양식 참조 (필수) ★★★</strong></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">2-3) 차트팀 활동 (활동 종료 후) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 음방 활동 종료 후</strong></p>
+                            <ul>
+                                <li>차트업로드 종료일은 추후 상의 후 확정</li>
+                                <li>기준: 차트 아웃 2개 사이트 이상이 지속될 경우</li>
+                            </ul> 
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">3) 차트 업로드 메뉴얼 (★★★★★) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 계정 관련</strong></p>
+                            <ul>
+                                <li>
+                                    [NCT127 차트팀 트위터]<br>
+                                    ID: 127STRM_CHART<br>
+                                    PW: lovenct127
+                                </li>
+                                <br>
+                                <li>
+                                    [차트팀 트위터에 연결된 구글 계정]<br>
+                                    ID: nct127strmm@gmail.com<br>
+                                    PW: lovenct127
+                                </li>
+                            </ul>
+                            <p><strong>2. 차트 관련</strong></p>
+                            <ul>
+                                <li>
+                                    차트 확인 사이트: <a href="https://가이섬.com">가이섬</a><br>
+                                    가이섬에는 더 많은 순위가 노출되지만, 공식에서 지원하는 순위까지만 업로드하고, 그 외는 차트아웃으로 업로드
+                                </li>
+                                <br>
+                                <li>
+                                    멜론 Top 100 & 실시간차트 100위까지 업로드<br>
+                                    지니 200위 까지 업로드<br>
+                                    벅스 100위 까지 업로드<br>
+                                    플로 100위 까지 업로드<br>
+                                    바이브 300위 까지 업로드
+                                </li>
+                            </ul>
+                            <p><strong>3. 업로드 양식</strong></p>
+                            <ul>
+                                <li>
+                                    나만 답글 가능 옵션 선택
+                                </li>
+                                <li>
+                                    순위 상승 시🆙, 하락 시 🔻, 유지 시 - , 차트아웃 시 ❌ , 재진입 시 🆕 
+                                </li>
+                                <li>업로드 예시)<br>
+                                    🕶️ Ay-Yo 2023-01-30 22:00<br>
+                                    <br>
+                                    멜론 Top 100 9 (🆙4)<br>
+                                    멜론 실시간 4 (-)<br>
+                                    지니 22 (🔻1)<br>
+                                    벅스 3 (🆙1)<br>
+                                    플로 99 (-)<br>
+                                    바이브 ❌<br>
+                                    🎬 934,393회<br>
+                                    <br>
+                                    #NCT127 #NCT127_Ay_Yo<br>
+                                    #NCT127_Say_AyYo<br>
+                                    #그냥_들어봐_Ay_Yo
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>차트 시간대 배정 예시)</li>
+                            </ul>
+                        <table class="time-table">
+                            <tr>
+                              <th>시간대</th>
+                              <th>팀원</th>
+                            </tr>
+                            <tr>
+                              <td>07</td>
+                              <td>팀원A (월화금), 팀원B (수목토일)</td>
+                            </tr>
+                            <tr>
+                              <td>08</td>
+                              <td>팀원C</td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>팀원C</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>팀원A</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>팀원C</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>팀원B</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>팀원B</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>팀원B</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>팀원D</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>팀원D</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>팀원D</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>팀원E</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>팀원E</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>팀원E</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>팀원F</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>팀원F</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>팀원F</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>팀원A</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>팀원A</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <ul>
+                            <li><strong>올리기 전에 단톡방에 한 번 올리기(수동 업로드시)</strong></li>
+                            <li>사정이 있을시 최소 2시간 전 연락, 오전은 그 전날 저녁에 미리 연락</li>
+                            <li>담당자가 10분내 업로드하지 않을 시, 확인하신 분이 업로드 할 것!</li>
+                            <li><strong>사전고지 없이, 3회이상 누락 시 퇴출</strong></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">4) 기타 사항 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 차트관련 DM 답변 FAQ</strong></p>
+                            <ul>
+                                <li>1. 멜론 TOP100 차트가 왜 오전 1시부터 급격히 하락하나요?</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다. 멜론 스트리밍 차트는 프리징이 되는 오전 1시부터 오전 7시 까지는 TOP100차트(누적스밍50%, 실시간스밍50%)가 아닌 24hit 차트(누적스밍100%, 일간차트와 같은 개념)로 변경 되어 노출 됩니다. 1시간 내의 차트반영이 아닌 24시간의 누적 스트리밍 차트 순위로 변경 되기 때문에 일시적으로 순위가 하락할 수 있습니다. 다음 날 동시간대 24hit 누적 스트리밍 차트를 위하여 새벽에도 꾸준한 음원 스트리밍을 권장드리고 있습니다. 감사합니다.</li>
+                            </ul>
+                            <ul>
+                                <li>2. 멜론 탑백 차트 예측 순위보다 떨어지는 이유가 무엇일까요?</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다. 멜론 스트리밍 사이트 특성상 10분 단위로  순위 예측이 진행되지만, 그 사이 다른 음원의 이용자 수가 늘어 날 경우, 예측 순위가 낮아 질 수 있다는 점 인지해주시고 단지 “예측” 일 뿐이니 실제 순위와는 다를 수 있다는 점 참고 부탁드립니다. 감사합니다.</li>
+                            </ul> 
+                            <ul>
+                                <li>3. 차트 업로드 이모티콘이 가독성이 떨어집니다.</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다. 말씀해 주신 사안에 대해 현재 내부 회의 중입니다. 감사합니다.</li>
+                            </ul> 
+                            <ul>
+                                <li>4. 뮤직비디오 다운 후 삭제하는 건가요?</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다. 현재 차트팀에서는 차트 업로드 관련 문의만 받고 있습니다. 번거로우시겠지만 해당 문의사항은 NCT127 스트리밍 @NCT127STRM 계정으로 문의 해주시기 바랍니다. 감사합니다. 감사합니다.</li>
+                            </ul> 
+                            <ul>
+                                <li>5. 스트리밍 가이드 관련해서 궁금해요!</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다.  NCT127 스트리밍 @NCT127STRM 계정에 스트리밍 가이드가 업로드 되어 있습니다. 현재 차트팀에서는 차트 업로드 관련 문의만 받고 있고 있습니다. 스트리밍 가이드 관련 문의 사항은 NCT127 스트리밍 @NCT127STRM 계정으로 문의 해주시기 바랍니다. 감사합니다.</li>
+                            </ul> 
+                            <ul>
+                                <li>6. 새벽차트가 오류 난 것 같아요!</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다. 현재 차트팀에서는 프리징이 되는 오전 1시부터 오전 7시 타임에는 차트봇과 분리 된 새벽봇을 가동시키고 있으며, 가이섬 홈페이지 업데이트 등을 대비하여 MV 조회수만 업로드 하고 있습니다. 현재 가이섬 홈페이지의 개편으로 인하여 저희가 준비해놓은 코드에 수정이 필요해졌습니다. 미리 공지드리지 못한 점 죄송합니다.</li>
+                            </ul> 
+                            <ul>
+                                <li>7. 뮤비 프리징이 심해요</li>
+                                <li>안녕하세요 NCT 127 스트리밍 차트팀입니다. 현재 차트팀에서는 차트 업로드 관련 문의만 받고 있습니다. 스트리밍 팀에서 자체적으로 실험한 뮤비 스트리밍 가이드가 NCT127 스트리밍 @NCT127STRM 에 업로드 되어 있습니다. 이후 추가 문의사항이 있으시다면 번거로우시겠지만 NCT127 스트리밍 @NCT127STRM 계정으로 문의 해주시기 바랍니다. 감사합니다.</li>
+                            </ul> 
+                            <p><strong>2. 연합팀 : 예) NCT 2020</strong></p>
+                            <ul>
+                                <li>NCT2020 활동 중 NCT127 곡인 music, dance 업로드 매시간 차트아웃 될 때까지(15일) 진행</li>
+                            </ul>
+                            <p><strong>3. 이벤트 음원 : 예) NCT127-Save</strong></p>
+                            <ul>
+                                <li>스밍독려 해시 정하기 ex)시즈니랑_붙어있자_STICKER</li>
+                                <li>이때는 사람이 진짜 인원이 너무 없어서(3명이었음) 발매일만 매시간 업로드 진행하고, 일주일동안 3시간 간격으로 업로드 진행</li>
+                                <li>개인적으로는 인원이 어느정도 있다면, 매시간 업로드 음반 발매 일주일간 진행이 좋을 것 같다고 생각</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
