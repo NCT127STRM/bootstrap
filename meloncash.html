@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCT127STRM | 멜론 캐시 충전</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: #5a5a5a;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .retro-window {
+            background-color: #3e3e3e;
+            border: 6px solid black;
+            border-radius: 18px;
+            width: 400px;
+            height: 300px;
+            position: relative;
+        }
+        .retro-titlebar {
+            background-color: rgb(114, 114, 114);
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+        }
+        .retro-buttons {
+            float: left;
+        }
+        .retro-title {
+            float: left;
+        }
+        .retro-button {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 3px;
+        }
+        .retro-button.close {
+            background-color: #ff5f5f;
+        }
+        .retro-button.maximize {
+            background-color: #fff94f;
+        }
+        .retro-button.minimize {
+            background-color: #57ff57;
+        }
+        .retro-content {
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            padding: 10px;
+            overflow: auto;
+        }
+        .btn-black {
+            background-color: white;
+            border: none;
+            color: black;
+            border-radius: 50px;
+            padding: 13px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="retro-window" style="display: flex; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; margin-top: 10rem;">
+        <div class="retro-titlebar">
+            <div class="retro-buttons" style="margin-top: 0.3rem;">
+                <div class="retro-button close"></div>
+                <div class="retro-button maximize"></div>
+                <div class="retro-button minimize"></div>
+            </div>
+            <div class="retro-title" style="margin-left: 1rem; margin-top: 0.3rem">NCT127STRM | 멜론 캐시 충전</div>
+        </div>
+        <div class="retro-content">
+            <button id="android" onclick="gotolink()" class="btn-black">접속이 안된다면 여기를 눌러주세요</button>
+        </div>
+    </div>
+    <script>
+        var userAgent = navigator.userAgent.toLowerCase();
+
+        console.log(userAgent);
+
+        $(document).ready(function() {
+
+            var linkto = "https://vo.la/mReyp";
+
+            function gotolink(linkto) {
+                location.href = linkto;
+            }
+
+
+            if(userAgent.match('android')) {
+                console.log('android');
+                linkto = "https://vo.la/mReyp";
+                gotolink(linkto);
+
+            }else if(userAgent.match('iphone')){
+                console.log('iphone');
+                linkto = "https://vo.la/mReyp";
+                gotolink(linkto);
+
+            }else if(userAgent.match('ipad')){
+                console.log('ipad');
+                linkto = "https://vo.la/mReyp";
+                gotolink(linkto);
+
+            }else {
+                console.log('etc');
+                // alert('PC인 경우 접속되지 않습니다. 모바일을 이용해주세요!');
+                linkto = "https://m2.melon.com/buy/meloncash/charge.htm";
+                gotolink(linkto);
+            }
+
+        });
+    </script>
+</body>
+</html>
