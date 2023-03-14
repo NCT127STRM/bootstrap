@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>NCT127STRM | 정산팀</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet"/>
+        <style>
+            #watermark {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -150px;
+                margin-top: -150px;
+                opacity:0.5;
+                z-index:99;
+                color:black;
+            }
+            .collapse-content {
+                padding: 1rem;
+            }
+            .collapsible {
+                background-color: var(--bs-cyan);
+                color: var(--bs-gray-dark);
+                cursor: pointer;
+                padding: 15px;
+                width: 100%;
+                border: none;
+                border-radius: 15px;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+            .content-content {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .active, .collapsible:hover {
+                background-color: #555;
+                color: var(--bs-gray-200)
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                border-radius: 15px;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .time-table {
+                width: 30%;
+                margin-left: 2rem;
+            }
+            @media (max-width: 576px) {
+                .time-table {
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">NCT127STRM</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_home.html">홈</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_event/strm_event_1.html">이벤트팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">계정팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="strm_calc1.html">정산팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_chart/strm_chart1.html">차트팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">총공관리팀</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">메뉴</button>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="collapse-content">
+                    <button type="button" class="collapsible">1) 정산팀 활동 (컴백 전) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 모금폼 확인</strong></p>
+                            <ul>
+                                <li>구글폼으로 받은 모금폼과 각 날에 들어올 입금내역서를 확인하여 대조하는 작업을 합니다</li>
+                                <li>입금내역서가 구글 드라이브에 들어오게 되면, 정산팀원분들께 번호를 배부해드려 자신이 할당받은 양만큼만 대조하시면 됩니다</li>
+                                <li>매일 하실 일은 없으시고, 한번에 몰아서 하게 되는 일이 많기 때문에 이 점 참고해주시면 됩니다</li>
+                                <li>예시) 정산팀 A: 1-55, 정산팀 B: 56-110, 정산팀 C: 111-165</li>
+                            </ul>  
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">2) 정산팀 활동 (활동 중) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p>NCT127이 활동중에는 정산팀원분들이 하시는 일은 크게 없습니다.<br>정산팀장 말고는 활동 중에는 정산팀에 주어지는 일은 없습니다.</p>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">3) 정산팀 활동 (총공 후) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 정산작업</strong></p>
+                            <ol>
+                                <li>총공관리팀 자료와 총공헬퍼분들이 내신 정산폼 내역서를 대조하는 일을 합니다</li>
+                                <li>총공헬퍼분들이 정산폼과 함께 내신 <strong>증빙자료</strong>도 함께 확인합니다</li>
+                                <li>위에 1,2번이 완료되면 입금을 해드립니다</li>
+                            </ol>
+                            <p>보편적인 업무루틴이 이렇게 진행되며, 총공 상황에 따라 총공기간내에 정산이 시작되기도 합니다<br>정산 기간은 3-4일 정도 소요됩니다</p> 
+                            <p><strong>2. 이메일 정리 (정산팀장)</strong></p>
+                            <ul>
+                                <li>리워드에 등재 될 닉네임 및 정산 내역서 발송될 이메일 정리</li>
+                            </ul>
+                            <p><strong>3. 리워드존 관련 디자인팀 컨택 (정산팀장)</strong></p>
+                            <ul>
+                                <li>리워드에 등재 될 닉네임은 디자인팀으로 이미지화 요청</li>
+                            </ul>
+                            <p><strong>4. 정산 내역서 작성 (정산팀장)</strong></p>
+                            <ul>
+                                <li>리워드 이미지를 포함하여 최종 정산 내역서 작성 및 발송</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

@@ -6,6 +6,63 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="strm_event_1.css">
+    <style>
+        .collapse-content {
+                padding: 1rem;
+            }
+            .collapsible {
+                background-color: var(--bs-yellow);
+                color: var(--bs-gray-dark);
+                cursor: pointer;
+                padding: 15px;
+                width: 100%;
+                border: none;
+                border-radius: 15px;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+            .content-content {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .active, .collapsible:hover {
+                background-color: #555;
+                color: #fff;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                border-radius: 15px;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .time-table {
+                width: 30%;
+                margin-left: 2rem;
+            }
+            @media (max-width: 576px) {
+                .time-table {
+                    width: 90%;
+                }
+            }
+    </style>
 </head>
 <body>
     <div class="d-flex" id="wrapper">
@@ -16,8 +73,8 @@
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_home.html">홈</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="strm_event_1.html">이벤트팀</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">계정팀</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">정산팀</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">차트팀</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_calc/strm_calc1.html">정산팀</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_chart/strm_chart1.html">차트팀</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">총공관리팀</a>
             </div>
         </div>
@@ -45,17 +102,74 @@
                     </div>
                 </div>
             </nav>
-            <!-- Page content-->
-            <div class="container" style="display: block; border: 2px solid black; border-radius: 1rem; height: auto; width: 35rem; margin-top: 1rem; margin-left: 1rem;">
-                * 기프티콘 기부 안내 전 이미지 제작을 위해 문서 작업 후 디자인팀에 작업 요청<br>							
-                ㄴ 관련 문서 : <a href="기프티콘 기부 안내 공지.pdf">기프티콘 기부 안내 공지 문서</a><br><br>							
-                * 트위터 업로드용 멘트 만들고 이미지와 함께 업로드<br> 							
-                * 기프티콘 응대는 Ay-Yo 활동부터 카카오톡 채널로 진행<br>							
-                * 기프티콘 기부 마감 일정은 기프티콘 상황에 따라 조정<br> 							
-                * 기부 응대시 미리 만들어놓은 응대문구로 통일하면 편리<br> 							
-                ㄴ 관련 문서 : https://docs.google.com/document/d/1IA8qHc-gfJVM5ZramkQ9qzQhlrg7eHJ4-ZLZyY7Ga_o/edit?usp=sharing							
+                <!-- Page content-->
+                <div class="collapse-content">
+                    <button type="button" class="collapsible">1) 기프티콘 기부 안내 및 응대 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>기프티콘 기부 안내 전 이미지 제작을 위해 문서 작업 후 디자인팀에 작업 요청 <a href="https://nbviewer.org/github/NCT127STRM/bootstrap/blob/main/strm_event/%EA%B8%B0%ED%94%84%ED%8B%B0%EC%BD%98%20%EA%B8%B0%EB%B6%80%20%EC%95%88%EB%82%B4%20%EA%B3%B5%EC%A7%80.pdf">(관련문서)</a></li>
+                                <li>트위터 업로드용 멘트 만들고 이미지와 함꼐 업로드</li>
+                                <li>기프티콘 응대는 Ay-Yo 활동부터 카카오톡 채널로 진행</li>
+                                <li>기프티콘 기부 마감 일정은 기프티콘 상황에 따라 조정</li>
+                                <li>기부 응대시 미리 만들어놓은 응대 문구로 통일하면 편리 <a href="응대문구.pdf">(관련문서)</a></li>
+                                <li>기프티콘 정리 문서</li>
+                            </ul>  
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">2) 이벤트 진행 관련 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>활동별 이벤트 (일일/주간 등) 구성 후 업무 내용</strong></p>
+                            <ul>
+                                <li>기프티콘 분배 (이벤트에 쓰일 기프티콘의 개수와 금액대 회의 후 분배)</li>
+                                <li>기프티콘 상품 이미지 캡쳐 (디자인팀 이벤트 이미지 작업 요청시 상품 안내 내용에 필요함)</li>
+                                <li>이벤트 내용 문서 작업 (디자인팀 이벤트 이미지 작업 요청시 필요)</li>
+                                <li>해시태그 만들기 (해시태그는 스밍팀 전체 디코방에서 아이디어 모집한 뒤 회의 후 투표로 결정됨)</li>
+                                <li>트위터 업로드용 멘트 만들기 (활동 컨셉, 나온 가사를 토대로 이벤트 내용 멘트 회의 후 결정)</li>
+                                <li>폼 양식 만들기 (이벤트 참여를 폼으로 받을 경우 필요함)</li>
+                                <li>트위터 업로드 시간대 정하기 (최대한 계정팀과 겹치지 않게 팀장님께서 일정 확인 후 조정 필요)</li>
+                                <li>에이요 이벤트 회의 내용 (참고해주시면 좋습니다!)</li>
+                            </ul>
+                            <p><strong>활동에 상관없이 고정으로 들어가는 이벤트</strong></p>
+                            <ul>
+                                <li><strong>1. 일일음원 스밍 이벤트/일일뮤비 스밍 이벤트</strong></li>
+                                <li>2주동안 매일 진행되는 이벤트</li>
+                                <li>4-8천원대 기프티콘이 많이 배정되는 편</li>
+                            </ul>
+                            <ul>
+                                <li><strong>2. 사전투표/실시간투표</strong></li>
+                                <li>사전투표는 발매 다음날부터 활동 끝날때까지 진행하였음 (Ay-Yo 활동 기준)</li>
+                                <li>투표 이벤트의 경우 1~3천원대 기프티콘이 많이 배정되는 편</li>
+                            </ul>
+                            <ul>
+                                <li><strong>3. 주간누적다운 이벤트</strong></li>
+                                <li>컴백주에 최대한 많은 다운 독려를 위해 진행 필요</li>
+                                <li>1-2만원대 기프티콘이 많이 배정되는 편</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">3) 당첨자 추첨 및 응대 관련 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>당첨자 추첨시 <a href="https://twitter.manana.kr/lottery" target="_blank">Twitter Manana</a> 위주로 사용</li>
+                                <li>당첨자 확인 → <strong>from:당첨자 @127STRM_EVENT</strong> or <strong>from:당첨자 @127STRM_EVENT since:20xx-xx-xx</strong></li>
+                                <li>중복 참여자가 많이 나오기 때문에 중복 제외 기준을 미리 정하고 추첨하는게 편리함</li>
+                                <li>당첨자 추첨 후 기프티콘 파일에 정리할경우 혼동되지 않도록 주의 필요<br>  
+                                자정이 지난뒤 추첨을 진행하기 때문에 일일이벤트의 경우 날짜를 헷갈릴 수 있음</li>
+                                <li>디스코드로 진행할 경우 "_(언더바)" 입력시 자동으로 기울임체 변경 후 사라짐 / 카카오톡 오픈채팅방을 추가로 만들어 진행</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
+    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
 </body>
 </html>

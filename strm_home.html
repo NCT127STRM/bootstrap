@@ -12,16 +12,30 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             #watermark {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -150px;
-            margin-top: -150px;
-            opacity:0.5;
-            z-index:99;
-            color:black;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -150px;
+                margin-top: -150px;
+                opacity:0.5;
+                z-index:99;
+                color:black;
+            }
+            .floating { 
+                animation-name: floating;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                margin-left: 30px;
+                margin-top: 5px;
+            }
+            
+            @keyframes floating {
+                0% { transform: translate(0,  0px); }
+                50%  { transform: translate(0, 15px); }
+                100%   { transform: translate(0, -0px); }   
             }
         </style>
     </head>
@@ -35,7 +49,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="strm_home.html">홈</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./strm_event/strm_event_1.html">이벤트팀</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">계정팀</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">정산팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./strm_calc/strm_calc1.html">정산팀</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./strm_chart/strm_chart1.html">차트팀</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">총공관리팀</a>
                 </div>
@@ -61,8 +75,10 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h2 class="mt-4">안녕하세요<br>
-                    NCT 127 스트리밍팀입니다.</h2>
+                    <div class="floating">
+                        <h2 class="mt-4">안녕하세요<br>
+                        NCT 127 스트리밍팀입니다.</h2>
+                    </div>
                 </div>
             </div>
         </div>
