@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCTFLIX</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+        .btn-play {
+            position: relative;
+            top: -14rem;
+            right: 20rem;
+            padding: 7px 20px;
+            background-color: #fff;
+            color: #000;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .btn-title {
+            position: relative;
+            top: -14rem;
+            right: 19rem;
+            padding: 7px 20px;
+            background-color: #fff;
+            color: #000;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .golddust-font {
+            position: relative;
+            z-index: 1;
+            width: 25rem;
+            top: -20rem;
+            left: 5rem;
+        }
+    </style>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" style="padding-top: 1rem; padding-bottom: 0;">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img class="nctflix-logo" src="assets/img/nctflix-logo.png"></a>
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Big image -->
+    <div>
+        <video src="./assets/poster/golddust.mp4" style="width: 100%" autoplay muted loop></video>
+        <img class="golddust-font" src="./assets/poster/golddust-font.png">
+        <a href="https://youtu.be/63yMOyq8lQM" target="_blank">
+            <button class="btn-play">► 재생</button>
+        </a>
+        <a href="https://embed.music.apple.com/us/album/gold-dust/1663022028?i=1663022861" target="_blank">
+            <button class="btn-title">🎧 윤슬 듣기</button>
+        </a>
+    </div>
+</body>
+</html>
