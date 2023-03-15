@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCT127STRM | 멜론 캐시 충전</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: #646464;
+        }
+        .popup {
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+        .message {
+            display: block;
+            width: 40rem;
+        }
+        @media (max-width: 640px) {
+            .message {
+                width: 20rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <button id="android" onclick="gotolink()" class="btn-black">
+            <image class="message" src="melon01.png"></image>
+        </button>
+    </div>
+    <script>
+        var userAgent = navigator.userAgent.toLowerCase();
+
+        console.log(userAgent);
+
+        $(document).ready(function() {
+
+            var linkto = "https://vo.la/mReyp";
+
+            function gotolink(linkto) {
+                location.href = linkto;
+            }
+
+
+            if(userAgent.match('android')) {
+                console.log('android');
+                linkto = "https://vo.la/mReyp";
+                gotolink(linkto);
+
+            }else if(userAgent.match('iphone')){
+                console.log('iphone');
+                linkto = "https://vo.la/mReyp";
+                gotolink(linkto);
+
+            }else if(userAgent.match('ipad')){
+                console.log('ipad');
+                linkto = "https://vo.la/mReyp";
+                gotolink(linkto);
+
+            }else {
+                console.log('etc');
+                // alert('PC인 경우 접속되지 않습니다. 모바일을 이용해주세요!');
+                linkto = "https://m2.melon.com/buy/meloncash/charge.htm";
+                gotolink(linkto);
+            }
+
+        });
+    </script>
+</body>
+</html>
