@@ -136,3 +136,17 @@ body {
 .nav__black {
     background-color: #111;
 }
+
+@media only screen and (max-width: 767px) {
+    .banner__title {
+        margin-left: 0.2rem;
+    }
+    
+    .banner__description {
+        margin-left: 0.2rem;
+    }
+    
+    .banner__button {
+        margin-left: 0.2rem;
+    }
+}
