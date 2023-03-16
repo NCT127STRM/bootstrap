@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kr" data-arp-injected="true">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTUBE</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: small;
+        }
+        img {
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <ol id="videos-container"></ol>
+    <div id="thumbnails"></div>
+    <script>
+        // Replace YOUR_API_KEY with your actual API key
+        var apiKey = 'AIzaSyDnIw4BbT7Pb1799SJ0qbQp0gZNeOkpmdw';
+        // Replace VIDEO_IDS with an array of video IDs you want to retrieve information for
+        var videoIds = ['R9XpA_zXDDI', 'FRilMXZqNhA', '7uxu4Z2HAnA', '2OvyA2__Eas', '1oYWnbTSang', '6ZUPsl0EVuk', 'U08OSl3V4po', 'x95oZNxW5Rc', 'azr7saygKng', 'arjy2v7zEI0', 'gj-VU9oK2Yo', '28XC2KRE-DE', 'WkuHLzMMTZM', 'zmUn7V6uuZM', '_psXn_VJ_AE'];
+
+        // Retrieve video information using the YouTube Data API
+        var apiUrl = 'https://www.googleapis.com/youtube/v3/videos?id=' + videoIds.join(',') + '&key=' + apiKey + '&part=snippet,statistics';
+        fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Sort the videos based on view count in descending order
+            data.items.sort((a, b) => b.statistics.viewCount - a.statistics.viewCount);
+
+            // Display video information on an HTML page
+            var container = document.getElementById('videos-container');
+            data.items.forEach(item => {
+            var title = item.snippet.title;
+            var views = new Intl.NumberFormat().format(item.statistics.viewCount); // Add commas to the view count
+            var videoElement = document.createElement('li');
+            videoElement.innerHTML = '<h3>' + title + '</h1><p>Views: ' + views + '</p>';
+            container.appendChild(videoElement);
+            });
+
+        var thumbnailUrls = [];
+        // Fetch thumbnail URLs for each video ID
+        for (var i = 0; i < videoIds.length; i++) {
+            var requestUrl = "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" + videoIds[i] + "&key=" + apiKey;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", requestUrl, false);
+            xhr.send();
+            var response = JSON.parse(xhr.responseText);
+            var thumbnailUrl = response.items[0].snippet.thumbnails.high.url;
+            thumbnailUrls.push(thumbnailUrl);
+        }
+
+        // Display thumbnail images on the webpage
+        var thumbnailElement = document.getElementById("thumbnails");
+        for (var i = 0; i < thumbnailUrls.length; i++) {
+            var imageElement = document.createElement("img");
+            imageElement.src = thumbnailUrls[i];
+            thumbnailElement.appendChild(imageElement);
+        }
+        });
+        
+    </script> 
+</body>
+</html>

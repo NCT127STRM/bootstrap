@@ -1,81 +1,190 @@
 <!DOCTYPE html>
-<html lang="en-kr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCTFLIX</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        body {
-            background-color: black;
-        }
-        .btn-play {
-            position: relative;
-            top: -14rem;
-            right: 20rem;
-            padding: 7px 20px;
-            background-color: #fff;
-            color: #000;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 1;
-        }
-        .btn-title {
-            position: relative;
-            top: -14rem;
-            right: 19rem;
-            padding: 7px 20px;
-            background-color: #fff;
-            color: #000;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 999;
-        }
-        .golddust-font {
-            position: relative;
-            z-index: 1;
-            width: 25rem;
-            top: -20rem;
-            left: 5rem;
-        }
-    </style>
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <title>NCTFLIX | 홈</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" style="padding-top: 1rem; padding-bottom: 0;">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img class="nctflix-logo" src="assets/img/nctflix-logo.png"></a>
-            <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                </ul>
+<body>
+    <!-- Top -->
+    <div class="nav" id="nav">
+        <img src="netflix-images/nctflix-logo.png" alt="" class="nav__logo" />
+        <div class="tooltip-wrap">
+            <img src="netflix-images/netflix-avatar.png" alt="" class="nav__avatar" />
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">윤슬 (Gold Dust)</h1>
+            <div class="banner__buttons">
+                <button class="banner__button" onclick=" window.open('https://youtu.be/63yMOyq8lQM','_blank')"><span>&#9755;</span> 재생</button>
+                <button class="banner__button" onclick=" window.open('https://embed.music.apple.com/us/album/gold-dust/1663022028?i=1663022861','_blank')">
+                    <span>&#9835;</span> 듣기</button>
+            </div>
+            <div class="banner__description">
+                NCT 127 '윤슬 (Gold Dust)' @NCT 127 2ND TOUR 'NEO CITY : SEOUL – THE LINK ⁺'<br>
             </div>
         </div>
-    </nav>
-    <!-- Big image -->
-    <div>
-        <video src="./assets/poster/golddust.mp4" style="width: 100%" autoplay muted loop></video>
-        <img class="golddust-font" src="./assets/poster/golddust-font.png">
-        <a href="https://youtu.be/63yMOyq8lQM" target="_blank">
-            <button class="btn-play">► 재생</button>
-        </a>
-        <a href="https://embed.music.apple.com/us/album/gold-dust/1663022028?i=1663022861" target="_blank">
-            <button class="btn-title">🎧 윤슬 듣기</button>
-        </a>
+        <div class="banner__fadebottom"></div>
     </div>
+
+    <!-- NCTFLIX Originals -->
+    <div class="row">
+        <h2>NCTFLIX ORIGINALS</h2>
+        <div class="row__posters">
+            <img src="netflix-images/MVayyo.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MV2baddies.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVfavorite.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVsticker.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVgimme.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVpunch.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVkickit.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVsuperhuman.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVwakey.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/MVsimonsays.jpg" alt="" class="row__poster row__posterLarge">
+        </div>
+    </div>
+
+    <!-- 오늘 127의 TOP 10 시리즈 (조회수 순) -->
+    <div class="row">
+        <h2>127의 TOP 10 시리즈</h2>
+        <div class="row__posters">
+            <img src="netflix-images/top1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top2.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top3.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top4.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top5.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top6.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top7.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top8.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top9.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/top10.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+
+    <!-- 웃음 빵빵 코미디 -->
+    <div class="row">
+        <h2>웃음 빵빵 코미디</h2>
+        <div class="row__posters">
+            <img src="netflix-images/SHOW술찌즈.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWAy-YoSHOW1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWcityHS1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWneomodel1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWbestagent1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWhsbaseball1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWofficeround1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWbestdancer1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWwelcomeneozone1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWlnpps1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWamericanschool1.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+
+    <!-- 이거 하나면 나도 백주부? -->
+    <div class="row">
+        <h2>이거 하나면 나도 백주부?</h2>
+        <div class="row__posters">
+            <img src="netflix-images/MSS8.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS7.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS6.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS5.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS4.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS3.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS2.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSS1.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+    
+    <!-- 새벽 감성이 느껴질 때 -->
+    <div class="row">
+        <h2>새벽 감성이 느껴질 때</h2>
+        <div class="row__posters">
+            <img src="netflix-images/SHOWtous1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWfillitup1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWsticktgt1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWourjuly1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/SHOWtoyou1.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+
+    <!-- NEO CITY: THE LINK -->
+    <div class="row">
+        <h2>NEO CITY: THE LINK</h2>
+        <div class="row__posters">
+            <img src="netflix-images/CONthelink1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink2.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink3.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink4.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink5.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink6.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink7.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink8.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelink9.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+    
+    <!-- THE LINK to the World -->
+    <div class="row">
+        <h2>THE LINK to the World</h2>
+        <div class="row__posters">
+            <img src="netflix-images/CONthelinktokyo1.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelinktokyo2.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelinksingapore.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelinkmanila.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelinknewark.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelinkjakarta.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/CONthelinkbangkok.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+
+    <!-- 가창력 폭발! 믿고듣는 127 -->
+    <div class="row">
+        <h2>가창력 폭발! 믿고듣는 127</h2>
+        <div class="row__posters">
+            <img src="netflix-images/LIVEkillingvoice.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVE2baddiespub.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVEconochil.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVE2baddiescomebackshow.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVElemonade.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVEpromiseyou.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/MSCSPACEosttrio.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVEsticker.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVEkickit.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/LIVEroadtrip.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+
+    <!-- 몰아보기 추천 시리즈 -->
+    <div class="row">
+        <h2>BEHIND 127 – Recording</h2>
+        <div class="row__posters">
+            <img src="netflix-images/RECHBEHayyo.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEH2baddies.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHbringthenoize.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHfavorite.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHmagiccarpetride.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHsticker.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHchica.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHgimme.jpg" alt="" class="row__poster row">
+            <img src="netflix-images/RECBEHfirstlove.jpg" alt="" class="row__poster row">
+        </div>
+    </div>
+
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav__black');
+            } else {
+                nav.classList.remove('nav__black');
+            }
+        })
+    </script>
 </body>
 </html>
