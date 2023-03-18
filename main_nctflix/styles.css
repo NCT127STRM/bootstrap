@@ -50,6 +50,14 @@ body {
     font-size: small;
 }
 
+.description {
+    display: none;
+}
+
+.row__posterLarge:hover .description {
+    display:block;
+}
+
 .banner {
     background-image: url('netflix-images/banner.jpg');
     background-size: cover;
