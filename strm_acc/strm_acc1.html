@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>NCT127STRM | 계정팀</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet"/>
+        <style>
+            #watermark {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -150px;
+                margin-top: -150px;
+                opacity:0.5;
+                z-index:99;
+                color:black;
+            }
+            .collapse-content {
+                padding: 1rem;
+            }
+            .collapsible {
+                background-color: #f95ac1;
+                color: #ffe7a0;
+                cursor: pointer;
+                padding: 15px;
+                width: 100%;
+                border: none;
+                border-radius: 15px;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+            .content-content {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .active, .collapsible:hover {
+                background-color: #da6a6a;
+                color: var(--bs-gray-200)
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                border-radius: 15px;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .time-table {
+                width: 30%;
+                margin-left: 2rem;
+            }
+            @media (max-width: 576px) {
+                .time-table {
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">NCT127STRM</div>
+                <div class="list-group list-group-flush" style="font-weight: bold;">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_home.html">홈</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="strm_acc1.html">계정팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">디자인팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_event/strm_event1.html">이벤트팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_calc/strm_calc1.html">정산팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../strm_chart/strm_chart1.html">차트팀</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">총공관리팀</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">메뉴</button>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="collapse-content">
+                    <button type="button" class="collapsible">1) 계정팀 구성 및 조건 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>최소 3~4명의 인원이 필요</li>
+                                <li>업로드 일정에 맞게 가능한 팀원이 업로드하면 됨</li>
+                                <li>계정을 운영하고 문의 응답을 하므로 팀원들의 빠른 메시지 확인 및 답변 필요, 독창적이고 창의적인 아이디어 제공 필요, 계정을 운영하는 만큼 진중한 면도 필요</li>
+                            </ul>  
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">2) 계정팀 활동 (컴백 전) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>음원&뮤비 스트리밍 및 다운/라디오 시청/사전 및 생방송 투표/화력체크 등의 각종 가이드 확인 및 업로드</li>
+                                <li>팀원 모집, 아이디/모금 기부 안내글 및 독려글 업로드</li>
+                                <li>트위터/카카오톡플러스 문의 응답</li>
+                                <li>새로 들어오신 분, 계정팀 트위터/카카오톡플러스/ 구글 계정 아이디와 비밀번호 및 이용 방법 안내</li>
+                                <li>이벤트/차트팀 글 리트윗</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">3) 계정팀 활동 (활동 중) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>컴백 당일 권장 스트리밍 리스트/원클릭 서비스 업로드 (트위터&카카오플러스)</li>
+                                <li>라디오 신청 독려</li>
+                                <li>1위 후보 사전 및 생방송 투표 공지</li>
+                                <li>뮤직비디오 조회수 업로드</li>
+                                <li>컴백 후 달성 기록 축하글 및 독려글 업로드</li>
+                                <li>트위터/카카오톡플러스 문의 응답</li>
+                                <li>이벤트/차트팀 글 리트윗</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">4) 계정팀 활동 (총공 후) ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>활동 종료 글 업로드</li>
+                                <li>각종 시상식의 후보 ‘NCT 127’ 투표 가이드 및 독려글 업로드</li>
+                                <li>정산 및 리워드 존 업로드</li>
+                                <li>트위터/카카오톡플러스 문의 응답 (타부서와 함께 상의해야할 경우도 있음)</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">5) 계정팀 응답 및 업로드 메뉴얼 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <p><strong>1. 계정관련</strong></p>
+                            <ul>
+                                <li><strong>NCT 127 스트리밍팀 트위터</strong></li>
+                                <li>ID: PW:</li>
+                                <li><strong>계정팀 구글 계정</strong></li>
+                                <li>ID: PW:</li>
+                            </ul>
+                            <p><strong>2. 응답 관련 (자주 들어오는 질문은 기타사항을 통해 확인 가능)</strong></p>
+                            <ul>
+                                <li>안녕하세요, NCT 127 스트리밍팀입니다. (응답 내용) 감사합니다.</li>
+                            </ul>
+                            <p><strong>3. 양식 및 업로드 관련</strong></p>
+                            <ul>
+                                <li><strong>눈길을 끌 수 있는 글</strong></li>
+                                <li>
+                                    예시: RT) D-1 《Ay-Yo》 아이디 모집 상황<br><br>
+                                    💙지니 125%<br>
+                                    🧡벅스 61%<br>
+                                    💜바이브 84%<br>
+                                    💛카카오 57%<br><br>
+                                    컴백까지 하루 남았습니다🔥<br>
+                                    벅스 바이브 카카오 아이디 더 기부할 수 있는<br>
+                                    시즈니들은 내일까지 열심히 기부해주세요💞<br><br>
+                                    👇🏻해시태그를 통해 ID기부 인증 릴레이<br>
+                                    #아이디_기부_알유레디
+                                </li>
+                                <li><strong>진지하고 형식적인 글</strong></li>
+                                <li>
+                                    예시:<br>
+                                    <img src="acc_ancment.png" style="width:400px;">
+                                </li>
+                                <li>공지글, 가이드 등의 업로드 일정은 당일 팀장 공지, 업로드 가능한 시간에 순차적으로 팀원들 업로드</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible">6) 기타사항 ▼</button>
+                    <div class="content">
+                        <p class="content-content">
+                            <ul>
+                                <li>자주 들어오는 문의 및 답변</li>
+                            </ul>
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    Q. 와이파이에서 가입(아이디 생성)해도 되나요?<br>
+                                    or 꼭 데이터모드에서 가입해야 하나요?<br>
+                                    or 와이파이에서 가입한 아이디는 못 쓰나요?
+                                </li>
+                                <li>
+                                    ➡ 소량 생성의 경우 와이파이에서 진행하셔도 괜찮습니다. 다만 생성 중 아이피로 인해 차단이 발생한 경우 비행기 모드 등을 통해 아이피 변경을 하시거나, 다음날 재시도하시는 것을 권장합니다.
+                                </li><br>
+                                <li>
+                                    Q. 벅스 본인 인증
+                                </li>
+                                <li>
+                                    ➡ 벅스의 본인 인증은 가입 시 진행하는 전화번호 인증만 하시면 됩니다. 자세한 사항은 마음함에 가이드가 있으니 참고 부탁드립니다.
+                                </li><br>
+                                <li>
+                                    Q. 지니 본인 인증
+                                </li>
+                                <li>
+                                    ➡ 지니는 가입 시 진행하는 전화번호 인증과, 회원정보 관리에서 실명 인증으로 총 2회를 진행해주시면 됩니다. 자세한 사항은 마음함에 가이드가 있으니 참고 부탁드립니다.
+                                </li><br>
+                                <li>
+                                    Q. 실명 인증했는데 날짜 안 떠요
+                                </li>
+                                <li>
+                                    ➡ 미성년자이신 경우 실명 인증을 완료하더라도 인증 완료 문구가 뜨지 않는 경우가 있습니다. 음원 다운로드를 클릭하여 결제창이 뜨는지 확인하시고 기부해주시면 됩니다. (아이폰은 사파리 창 or PC로 확인 부탁드립니다.)
+                                </li><br>
+                                <li>
+                                    Q. 직접쓰는 메일로 가입했는데 가상 도메인으로 변경해야하나요?
+                                </li>
+                                <li>
+                                    ➡ 타인의 메일로 결제 내역 전송이 되는 것을 방지하기 위해 가상 도메인을 권장드리고 있기 때문에, 직접 사용하시는 메일로 생성하신 경우 수정하지 않으셔도 됩니다. 
+                                </li><br>
+                                <li>
+                                    Q. 다른 가상 도메인을 썼는데 바꿔서 기부해야하나요?<br>
+                                    다른 가상 도메인으로 가입한 아이디도 기부 가능한가요?
+                                </li>
+                                <li>
+                                    ➡ 안내드린 도메인으로 생성된 아이디가 아니어도 가상 도메인을 사용하신 경우 도메인을 변경하지 않고 기부가 가능합니다.
+                                </li><br>
+                                <li>
+                                    Q. 지니 가상 도메인으로 변경이 안돼요
+                                </li>
+                                <li>
+                                    ➡ 지니 앱으로 수정 시 '직접 입력' 선택 후 수정이 불가능하여, PC나 모바일 웹의 PC버전을 통해 수정이 가능합니다.
+                                </li><br>
+                                <li>
+                                    Q. 지니 대량 기부가 아닌데 비번 변경해야하나요?
+                                </li>
+                                <li>
+                                    ➡ 현재 20개 이상의 대량 기부에 한해 비밀번호 변경없이 기부받고 있는 점 양해 부탁드립니다. ' nct127day! '로 비밀번호 변경 후 기부해주시면 감사하겠습니다
+                                </li><br>
+                                <li>
+                                    Q. 대량 문의 - 비번 관련
+                                </li>
+                                <li>
+                                    ➡ 트위터로 안내드린 메일 주소로 메일을 보내면 자동 회신으로 대량 기부 폼을 전송해드리며, 폼에 관련 문항이 있으니 기존에 설정된 비밀번호를 함께 기재하여 보내주시면 됩니다.
+                                </li><br>
+                                <li>
+                                    Q. 재로그인 가능한지?
+                                </li>
+                                <li>
+                                    ➡ 제출 후에는 되도록 재로그인을 하지 않으시는 것을 권장합니다.
+                                </li><br>
+                                <li>
+                                    Q. 재로그인 해서 정보 수정(메일, 이름, 생일)해도 되나요?
+                                </li>
+                                <li>
+                                    ➡ 재로그인하셔서 수정하셔도 괜찮습니다.
+                                </li><br>
+                                <li>
+                                    Q. 기부한 지니/벅스/카카오 아이디 알고싶어요
+                                </li>
+                                <li>
+                                    ➡ 제출 시 기재하신 연락 가능 수단을 알려주세요.<br>
+                                    (연락 가능 수단(메일or트위터 아이디) 받아서 총공관리팀에 확인 부탁)
+                                </li><br>
+                                <li>
+                                    Q. 아이디 소진 여부 궁금
+                                </li>
+                                <li>
+                                    ➡ 기부해주신 아이디로 로그인하여 구매 내역에서 개별곡/뮤비 다운 내역을 확인하시면 됩니다.
+                                </li><br>
+                                <li>
+                                    Q. 아이디 잘못 제출/사용할 아이디 등으로 변경/삭제 요청
+                                </li>
+                                <li>
+                                    (다운팀과 컨택)
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
