@@ -16,12 +16,20 @@
             margin-top: 5rem;
         }
         button {
-            border: 0;
-            border-radius: 0;
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
         }
         .message {
-            display: block;
+            margin-left: auto;
+            margin-right: auto;
             width: 40rem;
+            margin-top: auto;
+            margin-bottom: auto;
         }
         @media (max-width: 640px) {
             .message {
@@ -38,34 +46,30 @@
     </div>
     <script>
         var userAgent = navigator.userAgent.toLowerCase();
-
         console.log(userAgent);
 
         $(document).ready(function() {
-
             var linkto = "https://vo.la/mReyp";
-
             function gotolink(linkto) {
                 location.href = linkto;
             }
-
 
             if(userAgent.match('android')) {
                 console.log('android');
                 linkto = "https://vo.la/mReyp";
                 gotolink(linkto);
-
-            }else if(userAgent.match('iphone')){
+            }
+            else if(userAgent.match('iphone')){
                 console.log('iphone');
                 linkto = "https://vo.la/mReyp";
                 gotolink(linkto);
-
-            }else if(userAgent.match('ipad')){
+            } 
+            else if(userAgent.match('ipad')){
                 console.log('ipad');
                 linkto = "https://vo.la/mReyp";
                 gotolink(linkto);
-
-            }else {
+            }
+            else {
                 console.log('etc');
                 // alert('PC인 경우 접속되지 않습니다. 모바일을 이용해주세요!');
                 linkto = "https://m2.melon.com/buy/meloncash/charge.htm";
