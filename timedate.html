@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Spinning 3D Globe with Letters</title>
+  <title>NCT127STRM | Time & Date</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
+      background-color: black;
+    }
+    h2 {
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    .datentime {
+      display: block;
+      position: relative;
+      z-index: 9999;
+      margin-top: 5rem;
+    }
+    canvas {
+      margin-top: -5rem;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
+  <div class="datentime">
+    <h2><span id="date"></span></h2>
+    <h2><span id="time"></span></h2>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     // Define the alphabet as an array of letters
@@ -55,6 +77,30 @@
       }
       animate();
     });
+    
+      // Define a function to update the date and time
+      function updateTime() {
+      var now = new Date();
+      var date = now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate() + ' ' + getDayName(now.getDay());
+      var time = now.getHours() + ':' + padZero(now.getMinutes()) + ':' + padZero(now.getSeconds());
+      
+      document.getElementById('date').textContent = date;
+      document.getElementById('time').textContent = time;
+    }
+    
+    // Define a function to get the day name
+    function getDayName(day) {
+      var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      return dayNames[day];
+    }
+    
+    // Define a function to pad a number with leading zeros
+    function padZero(num) {
+      return num.toString().padStart(2, '0');
+    }
+    
+    // Update the date and time every second
+    setInterval(updateTime, 1000);
   </script>
 </body>
 </html>
