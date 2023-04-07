@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCT127STRM | 홈</title>
     <link href="css/main-style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <style>
       #popup {
         display: none;
@@ -55,6 +56,7 @@
         color: #EEE;
         /* border: 1px solid #EEE; */
         padding: 20px;
+        overflow: scroll;
       }
       .backBtn {
         display: block;
@@ -82,6 +84,25 @@
         border: 1px solid #f1f1f1; /* Border around the scrollbar handle */
       }
 
+      @media (max-width: 600px) {
+        .first-4-icons-absolute ul {
+          display: flex;
+        }
+        #popup {
+          width: 300px;
+          height: 528px;
+          top: 50%;
+          left: 50%;
+          z-index: 9999;
+        }
+        .image-popup {
+          width: 300px;
+          height: 528px;
+          top: 50%;
+          left: 50%;
+          z-index: 9999;
+        }
+      }
     </style>
 </head>
 <body>  
@@ -214,8 +235,7 @@
         </li>
       </div>
       <p class="playlist-oneclick-desc" style="text-align: center; border-bottom: 1px solid #EEE;">'노동요' 플리를 바로 듣고싶다면?</p>
-      Playlist 
-      <div class="playlist-oneclick" style="  display: grid; grid-template-columns: auto auto auto; text-align: center; border-bottom: 1px solid #EEE;">
+      <div class="playlist-oneclick" style="  display: grid; grid-template-columns: auto auto auto; text-align: center; border-bottom: 1px solid #EEE; align-items: center;">
         <div class="oneclick-row-1">
           <div style="padding: 0.5rem;">멜론 iOS</div>
           <div style="padding: 0.5rem;">지니 iOS</div>
@@ -239,7 +259,7 @@
     
     <div id="popup2" class="image-popup">
       <button class="backBtn">&larr;</button>
-      <h3 class="playlist-title" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; text-align: center; margin-top: 0rem; padding: 1rem;">Exercise Playlist</h3>
+      <h3 class="playlist-title" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; text-align: center; margin-top: 0rem; padding: 1rem;">공부</h3>
       <div class="playlist-songs" style="height: 330px; overflow: scroll; border-bottom: 1px solid #EEE; margin-top: -1rem;">
         <li alt="공부">
           <ul>01 Faster</ul>
@@ -259,8 +279,8 @@
           <ul>05 Superhuman</ul>
         </li>
       </div>
-      <p class="playlist-oneclick-desc" style="text-align: center; border-bottom: 1px solid #EEE;">Wanna hear "Exercise Playlist" right now?</p>
-      <div class="playlist-oneclick" style="  display: grid; grid-template-columns: auto auto auto; text-align: center; border-bottom: 1px solid #EEE;">
+      <p class="playlist-oneclick-desc" style="text-align: center; border-bottom: 1px solid #EEE;">'공부' 플리를 바로 듣고싶다면?</p>
+      <div class="playlist-oneclick" style="  display: grid; grid-template-columns: auto auto auto; text-align: center; border-bottom: 1px solid #EEE; align-items: center;">
         <div class="oneclick-row-1">
           <div style="padding: 0.5rem;">멜론 iOS</div>
           <div style="padding: 0.5rem;">지니 iOS</div>
