@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kr" data-arp-injected="true">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTUBE</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: small;
+        }
+        img {
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="videos-container"></div>
+    <script>
+        // Replace YOUR_API_KEY with your actual API key
+        var apiKey = 'AIzaSyDnIw4BbT7Pb1799SJ0qbQp0gZNeOkpmdw';
+        // Replace VIDEO_IDS with an array of video IDs you want to retrieve information for
+        var videoIds = ['R9XpA_zXDDI'];
+
+        // Retrieve video information using the YouTube Data API
+        var apiUrl = 'https://www.googleapis.com/youtube/v3/videos?id=' + videoIds.join(',') + '&key=' + apiKey + '&part=snippet,statistics';
+        fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Sort the videos based on view count in descending order
+            data.items.sort((a, b) => b.statistics.viewCount - a.statistics.viewCount);
+
+            // Display video information on an HTML page
+            var container = document.getElementById('videos-container');
+            data.items.forEach(item => {
+            var title = item.snippet.title;
+            var views = new Intl.NumberFormat().format(item.statistics.viewCount); // Add commas to the view count
+            var videoElement = document.createElement('div');
+            videoElement.innerHTML = views;
+            container.appendChild(videoElement);
+            });
+        });
+        
+    </script> 
+</body>
+</html>
