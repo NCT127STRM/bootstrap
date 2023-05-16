@@ -50,6 +50,14 @@ body {
     font-size: small;
 }
 
+.row__posterSmall:hover {
+    transform: scale(1.09)
+}
+
+img {
+    cursor: pointer;
+}
+
 .description {
     display: none;
 }
