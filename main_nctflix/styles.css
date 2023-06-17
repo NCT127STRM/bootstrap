@@ -15,37 +15,42 @@ body {
 
 footer {
     font-family: Helvetica;
-    color: white;
+    color: #7e7e7e;
     text-align: center;
     padding: 1rem;
     padding-bottom: 2rem;
     text-decoration: none;
-
+    font-size: small;
 }
 
 footer a {
-    color: white;
+    color: #7e7e7e;
     text-decoration: none;
+    font-size: small;
 }
 
 footer a:hover {
-    color: white;
+    color: #7e7e7e;
     text-decoration: none;
+    font-size: small;
 }
 
 footer a:visited {
-    color: white;
+    color: #7e7e7e;
     text-decoration: none;
+    font-size: small;
 }
 
 footer a:link {
-    color: white;
+    color: #7e7e7e;
     text-decoration: none;
+    font-size: small;
 }
 
 footer a:active {
-    color: white;
+    color: #7e7e7e;
     text-decoration: none;
+    font-size: small;
 }
 
 .copyrightlist {
