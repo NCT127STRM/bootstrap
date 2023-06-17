@@ -14,7 +14,7 @@ function generateCertificate(event) {
     // Generate the certificate HTML
     const certificateHTML = `
     <div id="certificate-content">
-        <h2>👑 명예의 칠푸딩 🚀</h2>
+        <h2>👑 명예의 칠푸딩 🏅</h2>
         <p>💚${nickname}💚님은<br>NCT127의 무궁한 발전을 위해<br>명예의 칠푸딩에 가입하였으므로<br>이 인증서를 수여합니다.</p>
         <br>
         <p>${today}</p>
