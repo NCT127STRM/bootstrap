@@ -11,6 +11,7 @@ body {
     font-family: 'NeoDunggeunmoPro-Regular', 'Roboto';
     text-align: center;
     color: #c67149;
+    overflow: hidden;
     /* background-color: black; */
 }
 
@@ -40,11 +41,17 @@ button {
     margin-bottom: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
-    padding: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     color: #c67149;
     width: auto;
     height: auto;
-    font-size: small;
+    font-size: 1.5vw;
+}
+
+#certificate-content {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -53,6 +60,6 @@ a {
 
 #certificate-image {
     display: none; /* Hide the image initially */
-    width: 10rem;
-    height: 10rem;
+    height: auto;
+    max-width: 100%;
 }
