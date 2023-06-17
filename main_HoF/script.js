@@ -4,10 +4,22 @@ function generateCertificate(event) {
     const nicknameInput = document.getElementById('nickname-input');
     const nickname = nicknameInput.value;
 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
     // Generate the certificate HTML
     const certificateHTML = `
-        <h2>Certificate of Awesomeness</h2>
-        <p>This is to certify that ${nickname} is awesome!</p>
+    <div id="certificate-content">
+        <h2>👑 명예의 칠푸딩 🚀</h2>
+        <p>💚${nickname}💚님은<br>NCT127의 무궁한 발전을 위해<br>명예의 칠푸딩에 가입하였으므로<br>이 인증서를 수여합니다.</p>
+        <br>
+        <p>${today}</p>
+        <p>NCT 127 STRM</p>
+    </div>
     `;
 
     const certificateContainer = document.getElementById('certificate-container');

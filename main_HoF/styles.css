@@ -1,14 +1,26 @@
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background-image: url('../230323__01.png');
+    background-position: center;
+    font-family: 'NeoDunggeunmoPro-Regular', 'Roboto';
     text-align: center;
+    color: white;
+    /* background-color: black; */
 }
 
 h1 {
-    color: #333;
+    margin-top: 3rem;
+    color: white;
 }
 
 form {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 input[type="text"] {
@@ -22,7 +34,18 @@ button {
 }
 
 #certificate-container {
-    margin-top: 20px;
+    background-color: #0e0c20;
+    letter-spacing: 1px;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 5rem;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 #certificate-image {

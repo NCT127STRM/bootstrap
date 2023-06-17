@@ -10,10 +10,14 @@
 <body>
     <h1>명예의 칠푸딩 인증샷</h1>
     <form id="nickname-form">
-        <input type="text" id="nickname-input" placeholder="Enter your nickname" required>
+        <input type="text" id="nickname-input" placeholder="닉네임을 입력해주세요" required>
         <button type="submit">제출하기</button>
     </form>
-    <div id="certificate-container"></div>
+    <div id="certificate-container">
+		<div id="certificate-content">
+			<!-- Certificate content will be dynamically generated here -->
+		</div>
+	</div>
     <script src="script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
 </body>
