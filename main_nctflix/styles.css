@@ -76,7 +76,12 @@ footer a:active {
     transform: scale(1.00);
 }
 
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
 .row__posters:hover::-webkit-scrollbar {
+    display: block;
     height: 6px;
 }
 
