@@ -77,7 +77,7 @@ footer a:active {
 }
 
 .row__posters::-webkit-scrollbar {
-    width: 10px;
+    height: 6px;
 }
 
 .row__posters::-webkit-scrollbar-thumb {
@@ -88,7 +88,6 @@ footer a:active {
 .row__posters::-webkit-scrollbar-track {
     background-color: black;
     border-radius: 10px;
-    box-shadow: inset 0px 0px 5px white;
 }
 
 .row__posterLarge {
