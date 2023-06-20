@@ -67,32 +67,13 @@ footer a:active {
 
 .row__posters {
     display: flex;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
 }
 
 .row__poster:hover {
     transform: scale(1.00);
-}
-
-.row__posters::-webkit-scrollbar {
-    display: none;
-}
-
-.row__posters:hover::-webkit-scrollbar {
-    display: block;
-    height: 6px;
-}
-
-.row__posters:hover::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 10px;
-}
-
-.row__posters:hover::-webkit-scrollbar-track {
-    background-color: black;
-    border-radius: 10px;
 }
 
 .row__posterLarge {

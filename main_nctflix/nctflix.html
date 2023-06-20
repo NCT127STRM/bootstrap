@@ -17,9 +17,9 @@
 <body>
     <!-- Top -->
     <div class="nav" id="nav">
-        <img src="./netflix-images/NCTFLIX_logo2.png" alt="" class="nav__logo" />
+        <img src="./netflix-images/NCTFLIX_logo2.png" id="logo" alt="NCT127FLIX" title="NCT127FLIX" class="nav__logo" />
         <div class="tooltip-wrap">
-            <img src="netflix-images/netflix-avatar.png" alt="" class="nav__avatar" />
+            <img src="netflix-images/netflix-avatar.png" alt="칠푸딩127" title="칠푸딩127" class="nav__avatar" />
         </div>
     </div>
 
@@ -258,6 +258,14 @@
     </footer>
 
     <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const logo = document.getElementById('logo');
+
+            logo.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
         const nav = document.getElementById('nav');
 
         window.addEventListener('scroll', () => {
