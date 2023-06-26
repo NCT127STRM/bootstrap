@@ -57,9 +57,9 @@ footer a:active {
     list-style: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .row__poster {
     width: 100%;
