@@ -15,6 +15,11 @@ body {
     /* background-color: black; */
 }
 
+header {
+    height: 2rem;
+    background-color: #47000a;
+}
+
 h1 {
     margin-top: 3rem;
     color: #c67149;
@@ -46,7 +51,7 @@ button {
     color: #c67149;
     width: auto;
     height: auto;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 #certificate-content {
