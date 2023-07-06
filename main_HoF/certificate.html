@@ -1,26 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCT127STRM | 칠푸딩 인증샷</title>
-	<link rel="stylesheet" type="text/css" href="certificate_styles.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <style>
+        @font-face {
+            font-family: 'NeoDunggeunmoPro-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background: url("image_1.jpg") no-repeat center;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            overflow-y: hidden;
+            font-family: 'NeoDunggeunmoPro-Regular', 'Roboto';
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 2.5vh;
+        }
+        .pudding-button {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            background-color: #FAC9B8;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        .pudding-button:hover {
+            transform: scale(1.1);
+            background-color: #E0603A;
+        }
+        form {
+            margin-bottom: 10rem;
+        }
+        input {
+            width: 7rem;
+        }
+    </style>
 </head>
 <body>
-    <header></header>
-    <h1>명예의 칠푸딩 인증샷</h1>
-    <form id="nickname-form">
-        <input type="text" id="nickname-input" placeholder="닉네임을 입력해주세요" required>
-        <button type="submit">제출하기</button>
+    <form action="certificate_pud.html" method="GET">
+        <label for="word">닉네임을 입력해주세요:</label>
+        <input type="text" name="word" id="word" required>
+        <button class="pudding-button" type="submit">Submit</button>
     </form>
-    <div id="certificate-container">
-		<div id="certificate-content">
-			<!-- Certificate content will be dynamically generated here -->
-		</div>
-	</div>
-    <script src="script.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
 </body>
 </html>
