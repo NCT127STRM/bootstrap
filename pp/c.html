@@ -1,0 +1,76 @@
+<head>
+  <!-- 제이쿼리 -->
+  <script src="jquery.min.js"></script>
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="tailwind.css">
+  <!-- full page css -->
+  <link rel="stylesheet" href="fullpage.css">
+  <!-- full page js -->
+  <script src="fullpage.min.js"></script>
+  <!-- full page scroll -->
+  <script src="scrolloverflow.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mobile">
+    <div class="site-wrap">
+      <div class="top-bar fixed top-0 z-50">
+        <nav class="menu-box-1">
+          <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="logo">
+
+              </div>
+              <div class="menu-items">
+                <li><a href="#section-1">Home</a></li>
+                <li><a href="#section-2">about</a></li>
+                <li><a href="#section-3">blogs</a></li>
+                <li><a href="#section-4">portfolio</a></li>
+                <li><a href="#section-5">contact</a></li>
+                <li><a href="#section-6">etc</a></li>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="site-wrap">
+      <div id="fullpage">
+        <section class="section" data-anchor="section-1">section-1</section>
+        <section class="section" data-anchor="section-2">section-2</section>
+        <section class="section" data-anchor="section-3">section-3</section>
+        <section class="section" data-anchor="section-4">section-4</section>
+        <section class="section" data-anchor="section-5">section-5</section>
+        <section class="section" data-anchor="section-6">section-6</section>
+      </div>
+    </div>
+
+    <script>
+      console.clear();
+
+      function Fullpage__init() {
+        new fullpage("#fullpage", {
+          sectionsColor: ["red", "orange", "yellow", "green", "blue", "purple"],
+        });
+
+        // 기존 섹션을 다시 활성화 하여, 최초에도 애니메이션이 발동 하도록
+        const $current = $("#fullpage .section.fp-section.active");
+        $current.removeClass("active");
+        setTimeout(function () {
+          $current.addClass("active");
+        });
+      }
+
+      Fullpage__init();
+
+    </script>
+  </div>
+</body>
