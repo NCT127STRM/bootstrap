@@ -1,106 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NCT127STRM | Time & Date</title>
+  <title>Centered YouTube Videos</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: black;
+      background-image: url('/230323__01.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow-y: auto;
     }
-    h2 {
-      width: 100%;
-      background-color: black;
-      color: white;
-      text-align: center;
+    /* Centering the video container vertically */
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Horizontal centering */
+      align-items: center; /* Vertical centering */
+      height: 100vh; /* Full viewport height */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent line breaks */
     }
-    .datentime {
-      display: block;
-      position: relative;
-      z-index: 9999;
-      margin-top: 5rem;
-    }
-    canvas {
-      margin-top: -5rem;
-      margin-left: auto;
-      margin-right: auto;
+
+    /* Styling for the embedded video iframes */
+    .video-container iframe {
+      width: 640px; /* Adjust the width as needed */
+      height: 640px; /* Adjust the height as needed */
+      margin-top: 1rem; /* Add horizontal spacing between videos */
     }
   </style>
 </head>
 <body>
-  <div class="datentime">
-    <h2><span id="date"></span></h2>
-    <h2><span id="time"></span></h2>
+  <div class="video-container">
+    <iframe
+      width="640"
+      height="640"
+      src="https://www.youtube.com/embed/lojqevEtzLg"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/DgaD-ky7wMw"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/X6tvRe0uoOE"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/e4uGV39ymWY"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/F8eGPBJZdXc"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/LuZWdo3R6FY"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/UFmUQVDDB3M"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/2Mj27Wz5Ss8"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/xI1_onxXFXo"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/QkoG7sNSVps"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/bBi5esQ9YwI"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/qkNW1_ij_sg"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/Y1GIkHy98Ik"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <!-- Add more iframe elements for additional videos -->
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script>
-    // Define the alphabet as an array of letters
-    var alphabet = 'NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127NCT127'.split('');
-
-    // Create the scene
-    var scene = new THREE.Scene();
-
-    // Create the camera
-    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 5;
-
-    // Create the renderer
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
-
-    // Load the font
-    var fontLoader = new THREE.FontLoader();
-    fontLoader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
-
-      // Create the material for the letters
-      var material = new THREE.MeshBasicMaterial({ color: 0xffffff });
-
-      // Create a mesh for each letter and add it to the scene
-      for (var i = 0; i < alphabet.length; i++) {
-        var letter = alphabet[i];
-        var textGeometry = new THREE.TextBufferGeometry(letter, { font: font, size: 0.1, height: 0.01 });
-        var mesh = new THREE.Mesh(textGeometry, material);
-        var phi = Math.acos(-1 + (2 * i) / alphabet.length);
-        var theta = Math.sqrt(alphabet.length * Math.PI) * phi;
-        mesh.position.setFromSphericalCoords(2, phi, theta);
-        mesh.lookAt(new THREE.Vector3(0, 0, 0));
-        scene.add(mesh);
-      }
-
-      // Animate the globe
-      function animate() {
-        requestAnimationFrame(animate);
-        scene.rotation.y += 0.008;
-        renderer.render(scene, camera);
-      }
-      animate();
-    });
-    
-      // Define a function to update the date and time
-      function updateTime() {
-      var now = new Date();
-      var date = now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate() + ' ' + getDayName(now.getDay());
-      var time = now.getHours() + ':' + padZero(now.getMinutes()) + ':' + padZero(now.getSeconds());
-      
-      document.getElementById('date').textContent = date;
-      document.getElementById('time').textContent = time;
-    }
-    
-    // Define a function to get the day name
-    function getDayName(day) {
-      var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      return dayNames[day];
-    }
-    
-    // Define a function to pad a number with leading zeros
-    function padZero(num) {
-      return num.toString().padStart(2, '0');
-    }
-    
-    // Update the date and time every second
-    setInterval(updateTime, 1000);
-  </script>
 </body>
 </html>
