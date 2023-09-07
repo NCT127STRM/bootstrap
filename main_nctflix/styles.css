@@ -67,9 +67,27 @@ footer a:active {
 
 .row__posters {
     display: flex;
+    position: relative;
     overflow-y: hidden;
     overflow-x: scroll;
+    white-space: nowrap;
     padding: 20px;
+}
+
+.btn-ui {
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.btn-prev {
+    left: 0;
+}
+
+.btn-next {
+    right: 0;
 }
 
 .row__poster:hover {
