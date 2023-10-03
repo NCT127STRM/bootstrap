@@ -323,27 +323,11 @@
             }
         })
 
-        (function(scrollbutton){
-            scrollbutton.addEventListener('load', function(){
-                const   btn_prev = document.getElementsByClassName('btn-prev'),
-                        btn_next = document.getElementsByClassName('btn-next'),
-                        content = document.getElementById('con');
-                const   content_scroll_width = content.scrollWidth;
-                let     content_scroll_left = content.scrollLeft;
-                btn_next.addEventListener('click', () => {
-                    content_scroll_left += 100;
-                    if (content_scroll_left >= content_scroll_width) { content_scroll_left = content_scroll_width; }
-                    content.scrollLeft = content_scroll_left;
-                });
-                btn_prev.addEventListener('click', () => {
-                    content_scroll_left -= 100;
-                    if (content_scroll_left <= 0) {
-                        content_scroll_left = 0;
-                    }
-                    content.scrollLeft = content_scroll_left;
-                });
-            });
-        });(window);
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const rowPosters = document.
+
+        prevBtn.addEventListener("click", function())
     </script>
 </body>
 </html>
