@@ -23,7 +23,7 @@
         margin: 10px 5px;
     }
     .mobile-container {
-        display: none;
+        display: block;
     }
 }
 
