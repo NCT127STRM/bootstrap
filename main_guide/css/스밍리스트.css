@@ -188,3 +188,74 @@ li {
     border: 1px solid #0074bf;
     color: white;
 }
+
+.melon .btn {
+    background-color: #00bf4c;
+    border: 1px solid #00bf4c;
+    color: white;
+}
+
+.melon .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #00bf4c;
+    transition: ease .5s;
+}
+
+.genie .btn {
+    background-color: #00b8f0;
+    border: 1px solid #00b8f0;
+    color: white;
+}
+
+.genie .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #00b8f0;
+    transition: ease .5s;
+}
+
+.bugs .btn {
+    background-color: #f07000;
+    border: 1px solid #f07000;
+    color: white;
+}
+
+.bugs .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #f07000;
+    transition: ease .5s;
+}
+
+.flo .btn {
+    background-color: #3f3aff;
+    border: 1px solid #3f3aff;
+    color: white;
+}
+
+.flo .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #3f3aff;
+    transition: ease .5s;
+}
+
+.vibe .btn {
+    background-color: #f60054;
+    border: 1px solid #f60054;
+    color: white;
+}
+
+.vibe .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #f60054;
+    transition: ease .5s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
