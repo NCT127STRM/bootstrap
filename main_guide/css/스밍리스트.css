@@ -135,7 +135,6 @@ h1 {
 
 .guide-top {
     line-height: 1.8em;
-    border: 1px solid white;
     padding: 20px;
     border-radius: 10px;
 }
@@ -144,7 +143,7 @@ h1 {
     margin: 20px 0;
 }
 
-.guide ul {
+.guide-text ul {
     display: inline-block;
     text-align: left;
     margin-left: 20px;
@@ -152,4 +151,40 @@ h1 {
 
 li {
     display: list-item;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 250px;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #343a40;
+    transition: ease .3s;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #0074bf;
+    transition: ease .5s;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #0074bf;
+    border: 1px solid #0074bf;
+    color: white;
 }
