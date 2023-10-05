@@ -134,6 +134,19 @@ header {
     width: 250px;
 }
 
+.btn-white {
+    background-color: white;
+    border: 1px solid white;
+    color: #343a40;
+}
+
+.btn-white:hover {
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: white;
+    transition: ease .3s;
+}
+
 .btn-dark:hover {
     background-color: white;
     border: 1px solid white;
