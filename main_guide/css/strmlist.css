@@ -8,6 +8,9 @@
     .center {
         font-size: medium;
     }
+    #guide {
+        width: calc(100%);
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -19,6 +22,9 @@
     }
     .mobile-container {
         display: block;
+    }
+    #guide {
+        width: 100%;
     }
 }
 
@@ -251,6 +257,32 @@ li {
     background-color: white;
     border: 1px solid white;
     color: #f60054;
+    transition: ease .5s;
+}
+
+.apple .btn {
+    background-color: #ff2546;
+    border: 1px solid #ff2546;
+    color: white;
+}
+
+.apple .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #ff2546;
+    transition: ease .5s;
+}
+
+.spotify .btn {
+    background-color: #009b12;
+    border: 1px solid #009b12;
+    color: white;
+}
+
+.spotify .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #009b12;
     transition: ease .5s;
 }
 
