@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opening Website</title>
+    <style>
+        body {
+            background-color: black;
+            overflow-y: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h2 {
+            color: white;
+            font-family: Helvetica, sans-serif;
+        }
+
+        #profile-image {
+            width: 128px;
+            height: 128px;
+            cursor: pointer;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease; /* Add fade-in transition */
+        }
+
+        #profile-image:hover {
+            border: 5px solid white;
+            transition: all 0.5s;
+        }
+
+        #username {
+            font-family: Helvetica, sans-serif;
+            color: gray;
+            margin-top: 10px;
+            transition: color 0.5s ease;
+        }
+
+        #profile-image:hover + #username {
+            color: white;
+            transition: all 0.5s;
+        }
+
+        .nav__logo {
+            width: 100px;
+            object-fit: contain;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            z-index: 1;
+            transition-timing-function: ease-in;
+            transition: all 0.5s;
+        }
+
+        .nav__black {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top -->
+    <div class="nav" id="nav">
+        <img src="./netflix-images/NCTFLIX_logo2.png" id="logo" alt="NCT127FLIX" title="NCT127FLIX" class="nav__logo" />
+    </div>
+
+    <audio id="opening-sound" src="./opening-sound.mp3" preload="auto" autoplay></audio>
+    <div class="container">
+        <h2>NCTFLIX를 시청할 프로필을 선택하세요.</h2>
+        <img id="profile-image" src="./profile-image.png" alt="Profile Image">
+        <h3 id="username">칠푸딩127</h3>
+    </div>
+
+    <script>
+        // When the profile image is clicked, redirect to the main website
+        document.getElementById("profile-image").addEventListener("click", function() {
+            window.location.href = "nctflix.html";
+        });
+
+        // Fade in the profile image when the page loads
+        window.addEventListener("load", function() {
+            var profileImage = document.getElementById("profile-image");
+            profileImage.style.opacity = "1";
+        });
+
+    </script>
+</body>
+</html>
