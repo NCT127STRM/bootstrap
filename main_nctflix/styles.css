@@ -215,7 +215,8 @@ img {
 }
 
 .slider {
-    display: flex;
+    color: white;
+    font-size: small;
     margin: 10px;
     white-space: nowrap;
     transition: transform 0.3s ease;
