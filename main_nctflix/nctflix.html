@@ -44,8 +44,6 @@
     <div class="row">
         <h2>NCT127FLIX ORIGINALS</h2>
         <div class="row__posters">
-            <button class="btn-ui btn-prev">Previous</button>
-            <button class="btn-ui btn-next">Next</button>
             <img src="netflix-images/MVayyo.jpg" alt="NCT 127 'Ay-Yo' MV" title="NCT 127 'Ay-Yo' MV" onclick="window.open('https://www.youtube.com/watch?v=R9XpA_zXDDI&pp=ygUKbmN0IDEyNyBtdg%3D%3D','_blank')" class="row__poster row__posterLarge">
             <img src="netflix-images/MV2baddies.jpg" alt="NCT 127 '질주 (2 Baddies)' MV" title="NCT 127 '질주 (2 Baddies)' MV" onclick="window.open('https://www.youtube.com/watch?v=FRilMXZqNhA&pp=ygUKbmN0IDEyNyBtdg%3D%3D','_blank')" class="row__poster row__posterLarge">
             <img src="netflix-images/MVfavorite.jpg" alt="NCT 127 'Favorite (Vampire)' MV" title="NCT 127 'Favorite (Vampire)' MV" onclick="window.open('https://www.youtube.com/watch?v=7uxu4Z2HAnA&pp=ygUKbmN0IDEyNyBtdg%3D%3D','_blank')" class="row__poster row__posterLarge">
@@ -61,6 +59,30 @@
             <img src="netflix-images/MVcherrybomb.jpg" alt="NCT 127 'Cherry Bomb' MV" title="NCT 127 'Cherry Bomb' MV" onclick="window.open('https://www.youtube.com/watch?v=WkuHLzMMTZM&pp=ygUKbmN0IDEyNyBtdg%3D%3D','_blank')" class="row__poster row__posterLarge">
             <img src="netflix-images/MVlimitless.jpg" alt="NCT 127 '無限的我 무한적아; LIMITLESS' MV" title="NCT 127 '無限的我 무한적아; LIMITLESS' MV" onclick="window.open('https://www.youtube.com/watch?v=zmUn7V6uuZM&pp=ygUUbmN0IDEyNyBtdiBsaW1pdGxlc3M%3D','_blank')" class="row__poster row__posterLarge">
             <img src="netflix-images/MVfiretruck.jpg" alt="NCT 127 '소방차 (Fire Truck)' MV" title="NCT 127 '소방차 (Fire Truck)' MV" onclick="window.open('https://www.youtube.com/watch?v=_psXn_VJ_AE&pp=ygUVbmN0IDEyNyBtdiBmaXJlIHRydWNr','_blank')" class="row__poster row__posterLarge">
+        </div>
+    </div>
+
+    <div class="slider">
+        <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
+        </div>
+        <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
+        </div>
+        <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
+        </div>
+        <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
+        </div>
+        <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
+        </div>
+                  <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
+        </div>
+                  <div>
+            <iframe src="https://youtube.com/embed/yGC30eKAqis?feature=share" frameborder="0" height="500" width="280"></iframe>
         </div>
     </div>
 
@@ -323,8 +345,15 @@
             }
         })
 
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 5,  // Adjust the number of slides to display
+                slidesToScroll: 1,
+                autoplay: true, // You can customize autoplay settings
+                autoplaySpeed: 2000 // Adjust autoplay speed in milliseconds
+            });
+        });
     </script>
 </body>
 </html>
