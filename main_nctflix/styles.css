@@ -63,6 +63,8 @@ footer a:active {
     max-height: 150px;
     margin-right: 10px;
     transition: transform 450ms;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .row__posters {
@@ -72,6 +74,8 @@ footer a:active {
     overflow-x: scroll;
     white-space: nowrap;
     padding: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .row__poster:hover {
@@ -185,6 +189,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     z-index: 1;
     transition-timing-function: ease-in;
@@ -222,6 +227,8 @@ img {
     transition: transform 0.3s ease;
     overflow-x: scroll;
     overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .slide {
@@ -231,7 +238,7 @@ img {
 }
 
 /* If you want to hide the default scroll bar, you can use the following CSS */
-.slider-container::-webkit-scrollbar {
+.slider-container::-webkit-scrollbar, .row__poster::-webkit-scrollbar, .row__posterLarge::-webkit-scrollbar, .slider::-webkit-scrollbar {
     display: none;
 }
 
