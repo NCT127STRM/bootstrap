@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <title>NCT127STRM | 명예의 칠푸딩</title>
+    <style>
+        @font-face {
+            font-family: 'NeoDunggeunmoPro-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Helvetica, sans-serif;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        .content {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Helvetica, sans-serif;
+            width: 75%;
+            height: auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: medium;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover, a:active, a:visited {
+            text-decoration: none;
+            color: black;
+        }
+        .genie, .genie:visited {
+            text-decoration: none;
+            color: blue;
+        }
+        .bugs {
+            text-decoration: none;
+            color: #FF5F1F;
+        }
+        .hoftable {
+            overflow-x: auto;
+        }
+        .table-1 {
+            position: absolute;
+            top: 49%;
+            left: 5.5%;
+        }
+        .table-2 {
+            position: absolute;
+            top: 94%;
+            left: 5.5%;
+        }
+        .table-3 {
+            position: absolute;
+            top: 139%;
+            left: 5.5%;
+        }
+        .table-4 {
+            position: absolute;
+            top: 185%;
+            left: 5.5%;
+        }
+        tr {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td {
+            flex: 1;
+            min-width: 140px;
+            height: 80px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            font-size: small;
+        }
+        footer {
+            font-family: Helvetica;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            padding-bottom: 1rem;
+            text-decoration: none;
+            font-size: small;
+        }
+        .mobile {
+            display: none;
+        }
+        .drive_link {
+            position: absolute;
+            top: auto;
+            left: auto;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: 1276px) and (max-width: 1284px) { 
+            .content {
+                top: 23%;
+                font-size: small;
+            }
+            .table-1 {
+                position: absolute;
+                top: 39%;
+                left: 5.4%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 77%;
+                left: 5.5%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 114%;
+                left: 5.5%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 151%;
+                left: 5.5%;
+            }
+            td {
+                min-width: 125px;
+                height: 75px;
+            }
+        }
+        @media (min-width: 1478px) and (max-width: 1486px) and (min-height: 710px) and (max-height: 718px) {
+            .content {
+                top: 27%;
+            }
+            .table-1 {
+                position: absolute;
+                top: 51%;
+                left: 5.5%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 99%;
+                left: 5.5%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 148%;
+                left: 5.5%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 196%;
+                left: 5.5%;
+            }
+            td {
+                height: 85px;
+                min-width: 144px;
+            }
+        }
+        @media (min-height: 896px) and (max-height: 904px) {
+            .content {
+                top: 23%;
+            }
+            .table-1 {
+                position: absolute;
+                top: 39%;
+                left: 5.5%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 77%;
+                left: 5.5%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 114%;
+                left: 5.5%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 151%;
+                left: 5.5%;
+            }
+        }
+        @media (min-width: 2196px) and (max-width: 2204px) { 
+            .content {
+                position: absolute;
+                top: 32%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: Helvetica, sans-serif;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                font-weight: bold;
+                font-size: x-large;
+            }
+            .table-1 {
+                position: absolute;
+                top: 56%;
+                left: 5.5%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 110%;
+                left: 5.5%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 164%;
+                left: 5.5%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 218%;
+                left: 5.5%;
+            }
+            td {
+                font-size: larger;
+                min-width: 215px;
+                height: 130px;
+            }
+        }
+        @media (min-width: 2397px) and (max-width: 2403px) {
+            .content {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: Helvetica, sans-serif;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+            .table-1 {
+                position: absolute;
+                top: 53%;
+                left: 5.5%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 102%;
+                left: 5.5%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 151%;
+                left: 5.5%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 201%;
+                left: 5.5%;
+            }
+            td {
+                font-size: x-large;
+                min-width: 247px;
+                height: 145px;
+            }
+        }
+        @media (min-width: 2510px) and (max-width: 2518px) and (min-height: 1178px) and (max-height: 1190px) {
+            .content {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: Helvetica, sans-serif;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                font-weight: bold;
+                font-size: larger;
+            }
+            .table-1 {
+                position: absolute;
+                top: 53%;
+                left: 5.5%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 102%;
+                left: 5.5%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 151%;
+                left: 5.5%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 201%;
+                left: 5.5%;
+            }
+            td {
+                font-size: x-large;
+                min-width: 246px;
+                height: 145px;
+            }
+        }
+        @media (min-width: 2587px) and (max-width: 2593px) and (min-height: 897px) and (max-height: 903px) {
+            .content {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: Helvetica, sans-serif;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                font-weight: bold;
+                font-size: x-large;
+            }
+            .table-1 {
+                position: absolute;
+                top: 72%;
+                left: 7%;
+            }
+            .table-2 {
+                position: absolute;
+                top: 138%;
+                left: 7%;
+            }
+            .table-3 {
+                position: absolute;
+                top: 204%;
+                left: 7%;
+            }
+            .table-4 {
+                position: absolute;
+                top: 272%;
+                left: 7%;
+            }
+            td {
+                font-size: xx-large;
+                min-width: 350px;
+                height: 200px;
+            }
+        }
+    </style>
+    <style>
+        .table-5 {
+            position: absolute;
+        }
+        .table-6 {
+            position: absolute;
+        }
+        .table-7 {
+            position: absolute;
+        }
+        .table-8 {
+            position: absolute;
+        }
+        .table-9 {
+            position: absolute;
+        }
+        @media (max-width: 452px) {
+            body {
+                width: 100%;
+            }
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                font-size: x-small;
+            }
+            .table-1 {
+                left: 0%;
+            }
+            .table-2 {
+                left: 0%;
+            }
+            .table-3 {
+                left: 0%;
+            }
+            .table-4 {
+                left: 0%;
+            }
+            .table-5 {
+                left: 0%;
+            }
+            .table-6 {
+                left: 0%;
+            }
+            .table-7 {
+                left: 0%;
+            }
+            .table-8 {
+                left: 0%;
+            }
+            .table-9 {
+                left: 0%;
+            }
+        }
+        @media (max-width: 373px) {
+            .content {
+                top: 24%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 43%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 83%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 123%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 162%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 203%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 242%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 281%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 321%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 361%;
+                left: 0%;
+            }
+            td {
+                min-width: 117px;
+                height: 70px;
+            }
+        }
+        @media (min-width: 374px) and (max-width: 376px) {
+            .content {
+                top: 23%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 41%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 79%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 154%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 192%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 230%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 268%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 306%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 344%;
+                left: 0%;
+            }
+            td {
+                min-width: 120px;
+                height: 75px;
+            }
+        }
+        @media (min-width: 377px) and (max-width: 385px) {
+            .content {
+                top: 25%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 46%;
+            }
+            .table-2 {
+                top: 88%;
+            }
+            .table-3 {
+                top: 130%;
+            }
+            .table-4 {
+                top: 172%;
+            }
+            .table-5 {
+                top: 203%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 245%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 288%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 331%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 373%;
+                left: 0%;
+            }
+            td {
+                min-width: 123px;
+                height: 73px;
+            }
+        }
+        @media (min-width: 386px) and (max-width: 388px) {
+            .content {
+                top: 25%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 46%;
+            }
+            .table-2 {
+                top: 88%;
+            }
+            .table-3 {
+                top: 130%;
+            }
+            .table-4 {
+                top: 172%;
+            }
+            .table-5 {
+                top: 215%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 258%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 301%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 344%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 387%;
+                left: 0%;
+            }
+            td {
+                min-width: 125px;
+                height: 75px;
+            }
+        }
+        @media (min-width: 389px) and (max-width: 391px) {
+            .content {
+                top: 23%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 41%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 79%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 194%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 233%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 272%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 311%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 350%;
+                left: 0%;
+            }
+            td {
+                min-width: 125px;
+                height: 75px;
+            }
+        }
+        @media (min-width: 411px) and (max-width: 413px) {
+            .content {
+                top: 23%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 43%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 83%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 123%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 163%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 204%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 245%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 286%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 327%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 368%;
+                left: 0%;
+            }
+            td {
+                min-width: 135px;
+                height: 80px;
+            }
+        }
+        @media (min-width: 413px) and (max-width: 415px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 25%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 41%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 79%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 192%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 230%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 268%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 305%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 343%;
+                left: 0%;
+            }
+            td {
+                min-width: 135px;
+                height: 80px;
+            }
+        }
+        @media (min-width: 413px) and (max-width: 415px) and (min-height: 735px) and (max-height: 737px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 25%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 51%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 96%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 142%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 189%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 234%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 280%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 327%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 372%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 419%;
+                left: 0%;
+            }
+            td {
+                min-width: 135px;
+                height: 80px;
+            }
+        }
+        @media (min-width: 319px) and (max-width: 321px) and (min-height: 639px) and (max-height: 641px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 26%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 45%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 86%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 127%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 168%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 209%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 251%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 293%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 335%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 377%;
+                left: 0%;
+            }
+            td {
+                min-width: 105px;
+                height: 60px;
+                font-size: small;
+            }
+        }
+        @media (min-width: 319px) and (max-width: 321px) and (min-height: 479px) and (max-height: 481px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 33%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 60%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 115%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 170%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 225%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 281%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 337%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 393%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 449%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 505%;
+                left: 0%;
+            }
+            td {
+                min-width: 105px;
+                height: 60px;
+                font-size: small;
+            }
+        }
+        @media (min-width: 319px) and (max-width: 321px) and (min-height: 567px) and (max-height: 569px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 30%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 50%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 97%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 143%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 189%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 236%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 283%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 330%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 377%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 424%;
+                left: 0%;
+            }
+            td {
+                min-width: 105px;
+                height: 60px;
+            }
+        }
+        @media (min-width: 374px) and (max-width: 376px) and (min-height: 663px) and (max-height: 671px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 30%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 51%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 97%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 143%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 189%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 234%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 280%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 326%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 372%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 418%;
+                left: 0%;
+            }
+            td {
+                min-width: 120px;
+                height: 75px;
+                font-size: small;
+            }
+        }
+        @media (min-width: 374px) and (max-width: 376px) and (min-height: 811px) and (max-height: 813px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 25%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 42%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 80%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 194%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 233%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 272%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 311%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 350%;
+                left: 0%;
+            }
+            td {
+                min-width: 120px;
+                height: 70px;
+            }
+        }
+        @media (min-width: 389px) and (max-width: 391px) and (min-height: 843px) and (max-height: 845px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 25%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 42%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 80%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 193%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 231%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 268%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 306%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 343%;
+                left: 0%;
+            }
+            td {
+                min-width: 127px;
+                height: 75px;
+            }
+        }
+        @media (min-width: 427px) and (max-width: 429px) and (min-height: 925px) and (max-height: 927px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 25%;
+                font-size: small;
+            }
+            .table-1 {
+                top: 41%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 79%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 194%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 233%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 272%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 311%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 350%;
+                left: 0%;
+            }
+            td {
+                min-width: 140px;
+                height: 85px;
+            }
+        }
+        @media (min-width: 430px) and (max-width: 434px) and (min-height: 928px) and (max-height: 936px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 25%;
+                font-size: small;
+            }
+            .table-1 {
+                top: 42%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 80%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 194%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 233%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 272%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 311%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 350%;
+                left: 0%;
+            }
+            td {
+                min-width: 140px;
+                height: 85px;
+            }
+        }
+        @media (min-width: 356px) and (max-width: 364px) and (min-height: 768px) and (max-height: 775px) {
+            .pc {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .content {
+                top: 24%;
+                font-size: x-small;
+            }
+            .table-1 {
+                top: 42%;
+                left: 0%;
+            }
+            .table-2 {
+                top: 80%;
+                left: 0%;
+            }
+            .table-3 {
+                top: 117%;
+                left: 0%;
+            }
+            .table-4 {
+                top: 155%;
+                left: 0%;
+            }
+            .table-5 {
+                top: 194%;
+                left: 0%;
+            }
+            .table-6 {
+                top: 233%;
+                left: 0%;
+            }
+            .table-7 {
+                top: 272%;
+                left: 0%;
+            }
+            .table-8 {
+                top: 311%;
+                left: 0%;
+            }
+            .table-9 {
+                top: 350%;
+                left: 0%;
+            }
+            td {
+                min-width: 117px;
+                height: 71px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pc">
+        <div>
+            <img style= "width: 100%; height: auto;" src="./0728__.jpg">
+        </div>
+        <div class="content">
+            <p>아래에 나와있는 구글 폼 링크로 들어가셔서 제출해주시면 명예의 칠푸딩 단상에 올라가게 되십니다💚</p>
+            <p><a href="https://forms.gle/5Y2pKDCCGgXStKPw9" alt="명예의 칠푸딩 아이디 기부 지니 구글폼" class="genie">명예의 칠푸딩 지니 아이디 기부 구글폼</a></p>
+            <p><a href="https://forms.gle/mX8ApjHg9RhBHKxD7" alt="명예의 칠푸딩 아이디 기부 벅스 구글폼" class="bugs">명예의 칠푸딩 벅스 아이디 기부 구글폼</a></p>
+            <p>닉네임은 한글로 8자 이하/영어로 13자 이하 밖에 안된다는 점, 양해 부탁드립니다</p>
+            <p><a href="./certificate.html" alt="명예의 칠푸딩 인증서 웹사이트" style="color: darkblue;">명예의 칠푸딩 인증서 받으러가기</a></p>
+            <p><a href="https://drive.google.com/drive/folders/1IBm7WcWpdu2jRO7WbZUtve47KFtC9kyr?usp=sharing" alt="명예의 칠푸딩 기부자 목록" style="color: darkgreen;">명예의 칠푸딩 기부자 목록 확인하러가기</a></p>
+        </div>
+        <!-- <div class="hoftable">
+            <table class="table-1">
+                <tbody>
+                  <tr class="tr-1">
+                    <td><strong>먕굴</strong></td>
+                    <td><strong>윤오왓암세잉</strong></td>
+                    <td><strong>정재현</strong></td>
+                    <td><strong>재현도영러버</strong></td>
+                    <td><strong>밥동</strong></td>
+                    <td><strong>현짱</strong></td>
+                    <td><strong>정우껌딱지</strong></td>
+                    <td><strong>우리칠의이야기<br>끝이없게</strong></td>
+                    <td><strong>신바</strong></td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>현시</td>
+                    <td>승</td>
+                    <td>윤오꺼</td>
+                    <td><strong>잰뭉이</strong></td>
+                    <td>헤헷</td>
+                    <td>동영잉</td>
+                    <td>술이</td>
+                    <td>ㄱㅈ</td>
+                    <td><strong>영초</strong></td>
+                </tr>
+                <tr class="tr-3">
+                    <td>VITAYO</td>
+                    <td>덩우야사랑한다</td>
+                    <td>도영아항상응원해</td>
+                    <td><strong>반쪽즈사랑해</strong></td>
+                    <td><strong>에시</strong></td>
+                    <td><strong>뿌요</strong></td>
+                    <td><strong>짜라짜라쟌쟌쟌</strong></td>
+                    <td>시나</td>
+                    <td>하리</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>함께행복하자</td>
+                    <td>susu</td>
+                    <td>김춘배</td>
+                    <td>피ㅊi</td>
+                    <td>서이구</td>
+                    <td>💚딸기소녀💚</td>
+                    <td>우리칠</td>
+                    <td>윤오야</td>
+                    <td>티이</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-2">
+                <tbody>
+                    <tr class="tr-1">
+                      <td>또영</td>
+                      <td>듀잉</td>
+                      <td>니유지</td>
+                      <td>_myj_h</td>
+                      <td>우유</td>
+                      <td>삼짱이</td>
+                      <td>정우야사랑해</td>
+                      <td>잰닝</td>
+                      <td>버니</td>
+                    </tr>
+                    <tr class="tr-2">
+                      <td>재현아늘응원해</td>
+                      <td>김압정</td>
+                      <td>옙</td>
+                      <td>정우건강복지단</td>
+                      <td>넴또</td>
+                      <td>우하하</td>
+                      <td>지똥이</td>
+                      <td>zkeuielw</td>
+                      <td>요로링칠푸링</td>
+                  </tr>
+                  <tr class="tr-3">
+                      <td>정피치</td>
+                      <td>애지</td>
+                      <td>도영토끼야</td>
+                      <td>Nek</td>
+                      <td>최나은</td>
+                      <td>살구</td>
+                      <td>초코캣</td>
+                      <td>효나77</td>
+                      <td>갱</td>
+                  </tr>
+                  <tr class="tr-4">
+                      <td>휴니</td>
+                      <td>세연</td>
+                      <td>hoi</td>
+                      <td>리브</td>
+                      <td>우리칠정푸딩</td>
+                      <td>포에버온리우리칠</td>
+                      <td>도영아행복하자</td>
+                      <td>도궁빵이</td>
+                      <td>조미</td>
+                  </tr>
+                  </tbody>
+            </table>
+            <table class="table-3">
+                <tbody>
+                    <tr class="tr-1">
+                      <td>세븐드림v</td>
+                      <td>시켸</td>
+                      <td>밈미</td>
+                      <td>우리칠리우</td>
+                      <td>우리우리칠</td>
+                      <td>나는야주먹빱</td>
+                      <td>이오</td>
+                      <td>우리칠푸딩</td>
+                      <td>능</td>
+                    </tr>
+                    <tr class="tr-2">
+                      <td>지영잉</td>
+                      <td>세탁소할머니</td>
+                      <td>재왕</td>
+                      <td>곰주니</td>
+                      <td>레티</td>
+                      <td>쌀</td>
+                      <td>항상정우편</td>
+                      <td>김폰카정우</td>
+                      <td>투더문</td>
+                  </tr>
+                  <tr class="tr-3">
+                      <td>얌얌이</td>
+                      <td>뎡밍밍</td>
+                      <td>do2young</td>
+                      <td>박규리</td>
+                      <td>푸파김쩡우</td>
+                      <td>JHB</td>
+                      <td>익명 1분</td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr class="tr-4">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  </tbody>
+            </table>
+            <table class="table-4">
+                <tbody>
+                    <tr class="tr-1">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div> -->
+    </div>
+    <div class="mobile">
+        <div>
+            <img style= "width: 100%; height: auto;" src="./mobile.jpg">
+        </div>
+        <div class="content">
+            <p>아래에 나와있는 구글 폼 링크로 들어가셔서 제출해주시면<br>명예의 칠푸딩 단상에 올라가게 되십니다💚</p>
+            <p><a href="https://forms.gle/5Y2pKDCCGgXStKPw9" alt="명예의 칠푸딩 아이디 기부 지니 구글폼" class="genie">명예의 칠푸딩 지니 아이디 기부 구글폼</a></p>
+            <p><a href="https://forms.gle/mX8ApjHg9RhBHKxD7" alt="명예의 칠푸딩 아이디 기부 벅스 구글폼" class="bugs">명예의 칠푸딩 벅스 아이디 기부 구글폼</a></p>
+            <p>닉네임은 한글로 8자 이하/영어로 13자 이하 밖에<br>안된다는 점, 양해 부탁드립니다</p>
+            <p><a href="./certificate.html" alt="명예의 칠푸딩 인증서 웹사이트" style="color: darkblue;">명예의 칠푸딩 인증서 받으러가기</a></p>
+            <p><a href="https://drive.google.com/drive/folders/1IBm7WcWpdu2jRO7WbZUtve47KFtC9kyr?usp=sharing" alt="명예의 칠푸딩 기부자 목록" style="color: darkgreen;">명예의 칠푸딩 기부자 목록 확인하러가기</a></p>
+        </div>
+        <!-- <div class="hoftable">
+            <table class="table-1">
+                <tbody>
+                  <tr class="tr-1">
+                    <td><strong>먕굴</strong></td>
+                    <td><strong>윤오왓암세잉</strong></td>
+                    <td><strong>정재현</strong></td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td><strong>재현도영러버</strong></td>
+                    <td><strong>밥동</strong></td>
+                    <td><strong>현짱</strong></td>
+                </tr>
+                <tr class="tr-3">
+                    <td><strong>정우껌딱지</strong></td>
+                    <td><strong>우리칠의이야기<br>끝이없게</strong></td>
+                    <td><strong>신바</strong></td>
+                </tr>
+                <tr class="tr-4">
+                    <td>현시</td>
+                    <td>승</td>
+                    <td>윤오꺼</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-2">
+                <tbody>
+                  <tr class="tr-1">
+                    <td><strong>잰뭉이</strong></td>
+                    <td>헤헷</td>
+                    <td>동영잉</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>술이</td>
+                    <td>ㄱㅈ</td>
+                    <td><strong>영초</strong></td>
+                </tr>
+                <tr class="tr-3">
+                    <td>VITAYO</td>
+                    <td>덩우야사랑한다</td>
+                    <td>도영아항상응원해</td>
+                </tr>
+                <tr class="tr-4">
+                    <td><strong>반쪽즈사랑해</strong></td>
+                    <td><strong>에시</strong></td>
+                    <td><strong>뿌요</strong></td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-3">
+                <tbody>
+                  <tr class="tr-1">
+                    <td><strong>짜라짜라쟌쟌쟌</strong></td>
+                    <td>시나</td>
+                    <td>하리</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>함께행복하자</td>
+                    <td>susu</td>
+                    <td>김춘배</td>
+                </tr>
+                <tr class="tr-3">
+                    <td>피ㅊi</td>
+                    <td>서이구</td>
+                    <td>💚딸기소녀💚</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>우리칠</td>
+                    <td>윤오야</td>
+                    <td>티이</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-4">
+                <tbody>
+                  <tr class="tr-1">
+                    <td>또영</td>
+                    <td>듀잉</td>
+                    <td>니유지</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>_myj_h</td>
+                    <td>우유</td>
+                    <td>삼짱이</td>
+                </tr>
+                <tr class="tr-3">
+                    <td>정우야사랑해</td>
+                    <td>잰닝</td>
+                    <td>버니</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>재현아늘응원해</td>
+                    <td>김압정</td>
+                    <td>옙</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-5">
+                <tbody>
+                  <tr class="tr-1">
+                    <td>정우건강복지단</td>
+                    <td>넴또</td>
+                    <td>우하하</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>지똥이</td>
+                    <td>zkeuielw</td>
+                    <td>요로링칠푸링</td>
+                </tr>
+                <tr class="tr-3">
+                    <td>정피치</td>
+                    <td>애지</td>
+                    <td>도영토끼야</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>Nek</td>
+                    <td>최나은</td>
+                    <td>살구</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-6">
+                <tbody>
+                  <tr class="tr-1">
+                    <td>초코캣</td>
+                    <td>효나77</td>
+                    <td>갱</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>휴니</td>
+                    <td>세연</td>
+                    <td>hoi</td>
+                </tr>
+                <tr class="tr-3">
+                    <td>리브</td>
+                    <td>우리칠정푸딩</td>
+                    <td>포에버온리우리칠</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>도영아행복하자</td>
+                    <td>도궁빵이</td>
+                    <td>조미</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-7">
+                <tbody>
+                  <tr class="tr-1">
+                    <td>세븐드림v</td>
+                    <td>시켸</td>
+                    <td>밈미</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>우리칠리우</td>
+                    <td>우리우리칠</td>
+                    <td>나는야주먹빱</td>
+                </tr>
+                <tr class="tr-3">
+                    <td>이오</td>
+                    <td>우리칠푸딩</td>
+                    <td>능</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>지영잉</td>
+                    <td>세탁소할머니</td>
+                    <td>재왕</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-8">
+                <tbody>
+                  <tr class="tr-1">
+                    <td>곰주니</td>
+                    <td>레티</td>
+                    <td>쌀</td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td>항상정우편</td>
+                    <td>김폰카정우</td>
+                    <td>투더문</td>
+                </tr>
+                <tr class="tr-3">
+                    <td>얌얌이</td>
+                    <td>뎡밍밍</td>
+                    <td>do2young</td>
+                </tr>
+                <tr class="tr-4">
+                    <td>박규리</td>
+                    <td>푸파김쩡우</td>
+                    <td>JHB</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-9">
+                <tbody>
+                  <tr class="tr-1">
+                    <td>익명 1분</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="tr-2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tr-3">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tr-4">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+    <footer>
+        <div class="copyright">
+            <ul class="copyrightlist">
+                <li style="list-style: none;">&#169; <a onclick="window.open('mailto:nct127strmteam@gmail.com','_blank')">2023 NCT127STRM;</a></li>
+                <li style="list-style: none;">Updated 2023.11.01</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
