@@ -196,6 +196,19 @@ img {
     transition: all 0.5s;
 }
 
+.nav-member {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-bottom: 10rem;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
 .nav__black {
     background-color: #111;
 }
