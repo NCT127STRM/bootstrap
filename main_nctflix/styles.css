@@ -17,7 +17,7 @@ footer {
     font-family: Helvetica;
     color: #7e7e7e;
     text-align: center;
-    padding: 1rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     text-decoration: none;
     font-size: small;
@@ -224,6 +224,11 @@ img {
     
     .banner__button {
         margin-left: 0.2rem;
+    }
+
+    .nav-member {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
