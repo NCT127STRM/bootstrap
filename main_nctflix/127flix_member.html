@@ -23,45 +23,64 @@
             justify-content: center;
             flex-direction: column;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-            gap: 10px;
-            max-width: 500px; /* Adjust the maximum width of the grid */
-            width: 100%;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
-        .grid-item {
-            text-align: center;
+        h2 {
             color: white;
-            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+            margin-bottom: 20px;
         }
 
-        .grid-item a, a::after {
-            color: inherit;
-            text-decoration: none;
+        .profile-images {
+            display: flex;
+            flex-flow: row wrap;
+            position: relative;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
         }
 
-        .grid-item img {
-            max-width: 75%;
+        .profile-item {
+            text-align: center;
+            flex: 1 1 18%;
             height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease-in-out;
+            width: auto;
+            margin: 8px;
         }
 
-        .grid-item:hover {
-            transform: scale(1.1);
+        .profile-image {
+            width: 128px;
+            height: 128px;
+            cursor: pointer;
+            opacity: 1; /* Initially hidden */
+            transition: opacity 1s ease; /* Add fade-in transition */
         }
 
-        @media only screen and (max-width: 767px) {
-            .nav-member {
-                flex-direction: column;
-            }
+        .profile-image:hover {
+            border: 5px solid white;
+            transition: all 0.5s;
+        }
 
-            .nav-member div {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
+        .profile-name {
+            font-family: Helvetica, sans-serif;
+            color: white;
+            margin-top: 10px;
+            transition: color 0.5s ease;
+        }
+
+        .profile-image:hover + .profile-name {
+            color: white;
+            transition: all 0.5s;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -85,33 +104,44 @@
 
     <div class="block" style="margin: 3rem;"></div>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="127flix_taeil.html"><img src="profile-image.png" alt="Image 1"><p>태일</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_johnny.html"><img src="profile-image.png" alt="Image 1"><p>쟈니</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_taeyong.html"><img src="profile-image.png" alt="Image 1"><p>태용</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_yuta.html"><img src="profile-image.png" alt="Image 1"><p>유타</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_doyoung.html"><img src="profile-image.png" alt="Image 1"><p>도영</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_jaehyun.html"><img src="profile-image.png" alt="Image 1"><p>재현</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_jungwoo.html"><img src="profile-image.png" alt="Image 1"><p>정우</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_mark.html"><img src="profile-image.png" alt="Image 1"><p>마크</p></a>
-        </div>
-        <div class="grid-item">
-            <a href="127flix_haechan.html"><img src="profile-image.png" alt="Image 1"><p>해찬</p></a>
+    <div class="container">
+        <div class="profile-images">
+            <div class="profile-item">
+                <a href="127flix_taeil.html"><img class="profile-image" src="./profile/127_1.jpg" alt="Profile Image 2">
+                <h4 class="profile-name">태일</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_johnny.html"><img class="profile-image" src="./profile/127_2.jpg" alt="Profile Image 3">
+                <h4 class="profile-name">쟈니</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_taeyong.html"><img class="profile-image" src="./profile/127_3.jpg" alt="Profile Image 4">
+                <h4 class="profile-name">태용</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_yuta.html"><img class="profile-image" src="./profile/127_4.jpg" alt="Profile Image 5">
+                <h4 class="profile-name">유타</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_doyoung.html"><img class="profile-image" src="./profile/127_5.jpg" alt="Profile Image 6">
+                <h4 class="profile-name">도영</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_jaehyun.html"><img class="profile-image" src="./profile/127_6.jpg" alt="Profile Image 7">
+                <h4 class="profile-name">재현</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_jungwoo.html"><img class="profile-image" src="./profile/127_7.jpg" alt="Profile Image 8">
+                <h4 class="profile-name">정우</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_mark.html"><img class="profile-image" src="./profile/127_8.jpg" alt="Profile Image 9">
+                <h4 class="profile-name">마크</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_haechan.html"><img class="profile-image" src="./profile/127_9.jpg" alt="Profile Image 10">
+                <h4 class="profile-name">해찬</h4></a>
+            </div>
         </div>
     </div>
 
@@ -151,6 +181,12 @@
                 autoplay: true, // You can customize autoplay settings
                 autoplaySpeed: 2000 // Adjust autoplay speed in milliseconds
             });
+        });
+
+        window.addEventListener("load", function() {
+            for (var i = 0; i < profileImages.length; i++) {
+                profileImages[i].style.opacity = "1";
+            }
         });
     </script>
 </body>
