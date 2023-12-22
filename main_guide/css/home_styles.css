@@ -168,26 +168,26 @@ header {
 .btn-dark:hover {
     background-color: white;
     border: 1px solid white;
-    color: #343a40;
+    color: #117755;
     transition: ease .3s;
 }
 
 .btn-primary:hover {
     background-color: white;
     border: 1px solid white;
-    color: #0074bf;
+    color: #ca1c2d;
     transition: ease .5s;
 }
 
 .btn-dark {
-    background-color: #343a40;
-    border: 1px solid #343a40;
+    background-color: #117755;
+    border: 1px solid #117755;
     color: white;
 }
 
 .btn-primary {
-    background-color: #0074bf;
-    border: 1px solid #0074bf;
+    background-color: #ca1c2d;
+    border: 1px solid #ca1c2d;
     color: white;
 }
 
