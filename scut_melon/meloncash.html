@@ -49,29 +49,28 @@
         console.log(userAgent);
 
         $(document).ready(function() {
-            var linkto = "https://vo.la/Z3WYq";
+            var linkto = "https://vo.la/BuLhc";
             function gotolink(linkto) {
                 location.href = linkto;
             }
 
             if(userAgent.match('android')) {
                 console.log('android');
-                linkto = "https://vo.la/Z3WYq";
+                linkto = "https://vo.la/BuLhc";
                 gotolink(linkto);
             }
             else if(userAgent.match('iphone')){
                 console.log('iphone');
-                linkto = "https://vo.la/Z3WYq";
+                linkto = "https://vo.la/BuLhc";
                 gotolink(linkto);
             } 
             else if(userAgent.match('ipad')){
                 console.log('ipad');
-                linkto = "https://vo.la/Z3WYq";
+                linkto = "https://vo.la/BuLhc";
                 gotolink(linkto);
             }
             else {
                 console.log('etc');
-                // alert('PC인 경우 접속되지 않습니다. 모바일을 이용해주세요!');
                 linkto = "https://m2.melon.com/buy/meloncash/charge.htm";
                 gotolink(linkto);
             }
