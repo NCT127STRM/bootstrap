@@ -72,7 +72,7 @@
         한국시간대로 설정하셔야 정확한 스밍횟수가 노출되는 점 양해 부탁드립니다💚</h4>
         <br>
         <div class="main-contents">
-            <h3>Fact Check (불가사의; 不可思議)</h3>
+            <h3>Be There For Me</h3>
             <h2 id="title"></h2>
         </div>
         <div class="meloncard" style="display: block; margin-top: 50px;">
@@ -88,16 +88,16 @@
         const now = new Date();
         const DD = now.getDate();
         const HH = now.getHours();
-        const VariableA = (24 * (DD - 6 - 1 + 30 + 31) * 3600) + (HH * 3600) + ((24 - 13) * 3600);
+        const VariableA = (24 * (DD - 22 - 1) * 3600) + (HH * 3600) + ((24 - 18) * 3600);
     
         // Define VariableB
-        const VariableB = 3660;
+        const VariableB = 3605;
     
         // Calculate VariableC
         const VariableC = VariableA / VariableB;
     
         const title = VariableC * 4
-        const sectrack = VariableC * 2
+        const sectrack = VariableC * 3
         const fsttrack = VariableC
 
         const Roundedtitle = Math.ceil(title);
@@ -106,8 +106,8 @@
 
         // Display VariableC in the body section
         document.getElementById("title").textContent = `${Roundedtitle}`;
-        document.getElementById("sectrack").textContent = `무중력(Space), Parade(행진), Angel Eyes, Yacht: ${Roundedsectrack}`
-        document.getElementById("fsttrack").textContent = `Je Ne Sais Quoi, Love is a beauty, Misty, Real Life: ${Roundedfsttrack}`
+        document.getElementById("sectrack").textContent = `나 홀로 집에 (Home Alone), 하얀 거짓말 (White Lie): ${Roundedsectrack}`
+        // document.getElementById("fsttrack").textContent = `Je Ne Sais Quoi, Love is a beauty, Misty, Real Life: ${Roundedfsttrack}`
     </script>  
 </body>
 </html>
