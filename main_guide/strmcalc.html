@@ -88,7 +88,7 @@
         const now = new Date();
         const DD = now.getDate();
         const HH = now.getHours();
-        const VariableA = (24 * (DD - 22 - 1) * 3600) + (HH * 3600) + ((24 - 18) * 3600);
+        const VariableA = (24 * (DD - 1) * 3600) + (HH * 3600);
     
         // Define VariableB
         const VariableB = 3605;
@@ -96,7 +96,7 @@
         // Calculate VariableC
         const VariableC = VariableA / VariableB;
     
-        const title = VariableC * 4
+        const title = VariableC * 4 + 887
         const sectrack = VariableC * 3
         const fsttrack = VariableC
 
