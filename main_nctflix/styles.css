@@ -209,6 +209,20 @@ img {
     transition: all 0.5s;
 }
 
+.nav-activity {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    font-size: medium;
+}
+
 .nav__black {
     background-color: #111;
 }
@@ -229,6 +243,14 @@ img {
     .nav-member {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .nav-activity {
+        font-size: small;
+    }
+    
+    .first-row {
+        padding-top: 5rem;
     }
 }
 
