@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../image/homeicons/NCTFLIX.png" sizes="32x32">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NCT127STRM">
+    <meta name="twitter:creator" content="NCT127STRM">
+    <meta name="twitter:image" content="./127FLIX_02.png">
+    <meta name="twitter:title" content="127FLIX by NCT127STRM">
+    <meta name="twitter:description" content="NCT 127 스트리밍팀이 정리한 NCT 127이 나왔던 모든 영상들의 아카이브, 127FLIX 입니다.">
+    <title>127FLIX | 활동별</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container-acivity {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        h2 {
+            color: white;
+            font-family: Helvetica, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .profile-images {
+            display: flex;
+            flex-flow: row wrap;
+            position: relative;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-item {
+            text-align: center;
+            flex: 1 1 18%;
+            height: auto;
+            width: auto;
+            margin: 5px;
+        }
+
+        .profile-image {
+            width: 96px;
+            height: 96px;
+            cursor: pointer;
+            opacity: 1; /* Initially hidden */
+            transition: opacity 1s ease; /* Add fade-in transition */
+        }
+
+        .profile-image:hover {
+            border: 5px solid white;
+            transition: all 0.5s;
+        }
+
+        .profile-name {
+            font-family: Helvetica, sans-serif;
+            color: white;
+            margin-top: 10px;
+            transition: color 0.5s ease;
+        }
+
+        .profile-image:hover + .profile-name {
+            color: white;
+            transition: all 0.5s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top -->
+    <div class="nav" id="nav">
+        <a href="127flix.html"><img src="./127FLIX_02.png" id="logo" alt="NCT127FLIX" title="NCT127FLIX" class="nav__logo" /></a>
+        <div>
+            <h4><a style="color: white; text-decoration: none;" href="127flix_theme.html">테마별</a></h4>
+        </div>
+        <div>
+            <h4><a style="color: white; text-decoration: none;" href="127flix_activity.html">활동별</a></h4>
+        </div>
+        <div>
+            <h4><a style="color: white; text-decoration: none;" href="127flix_member.html">멤버별</a></h4>
+        </div>
+        <div class="tooltip-wrap">
+            <a href="opening.html"><img src="netflix-images/netflix-avatar.png" alt="칠푸딩127" title="칠푸딩127" class="nav__avatar" id="profile-image"></a>
+        </div>
+    </div>
+
+    <div class="block" style="margin: 3rem;"></div>
+
+    <!-- <div class="adv" style="padding: 4rem; background-image: url('./netflix-images/adv/adv_sma.png'); background-size: cover;" onclick="window.open('https://t.co/6z1cCxh37L','_blank')"></div> -->
+
+    <div class="container-acivity">
+        <div class="profile-images">
+            <div class="profile-item">
+                <a href="127flix_btfm.html"><img class="profile-image" src="./profile/btfm.jpeg" alt="Profile Image 2">
+                <h4 class="profile-name">BTFM</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_factcheck.html"><img class="profile-image" src="./profile/factcheck.jpeg" alt="Profile Image 3">
+                <h4 class="profile-name">Fact Check</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_ayyo.html"><img class="profile-image" src="./profile/ayyo.jpeg" alt="Profile Image 4">
+                <h4 class="profile-name">Ay-Yo</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_2baddies.html"><img class="profile-image" src="./profile/2baddies.jpeg" alt="Profile Image 5">
+                <h4 class="profile-name">질주</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_favorite.html"><img class="profile-image" src="./profile/favorite.jpeg" alt="Profile Image 6">
+                <h4 class="profile-name">Favorite</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_sticker.html"><img class="profile-image" src="./profile/sticker.jpeg" alt="Profile Image 7">
+                <h4 class="profile-name">Sticker</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_punch.html"><img class="profile-image" src="./profile/punch.jpeg" alt="Profile Image 8">
+                <h4 class="profile-name">Punch</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_kickit.html"><img class="profile-image" src="./profile/kickit.jpeg" alt="Profile Image 9">
+                <h4 class="profile-name">영웅</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_superhuman.html"><img class="profile-image" src="./profile/superhuman.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">Superhuman</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_simonsays.html"><img class="profile-image" src="./profile/simonsays.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">Simon Says</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_regular.html"><img class="profile-image" src="./profile/regular.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">Regular</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_touch.html"><img class="profile-image" src="./profile/TOUCH.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">TOUCH</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_cherrybomb.html"><img class="profile-image" src="./profile/cherrybomb.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">Cherry Bomb</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_limitless.html"><img class="profile-image" src="./profile/limitless.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">무한적아</h4></a>
+            </div>
+            <div class="profile-item">
+                <a href="127flix_firetruck.html"><img class="profile-image" src="./profile/firetruck.jpeg" alt="Profile Image 10">
+                <h4 class="profile-name">소방차</h4></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <ul class="copyrightlist">
+                <li>&#169; <a onclick="window.open('mailto:nct127strmteam@gmail.com','_blank')">2024 NCT127STRM;</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const logo = document.getElementById('logo');
+
+            logo.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav__black');
+            } else {
+                nav.classList.remove('nav__black');
+            }
+        })
+
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 5,  // Adjust the number of slides to display
+                slidesToScroll: 1,
+                autoplay: true, // You can customize autoplay settings
+                autoplaySpeed: 2000 // Adjust autoplay speed in milliseconds
+            });
+        });
+    </script>
+</body>
+</html>
