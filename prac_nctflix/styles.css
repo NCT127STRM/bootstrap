@@ -57,8 +57,26 @@ footer a:active {
     list-style: none;
 }
 
+.poster-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
 .row__poster {
     width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.row__posterinfo {
+    display: inline-block;
+    min-width: 267px;
     object-fit: contain;
     max-height: 150px;
     margin-right: 10px;
@@ -74,6 +92,18 @@ footer a:active {
     overflow-x: scroll;
     white-space: nowrap;
     padding: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.row__posterSmallinfo {
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }

@@ -72,10 +72,10 @@
         한국시간대로 설정하셔야 정확한 스밍횟수가 노출되는 점 양해 부탁드립니다💚</h4>
         <br>
         <div class="main-contents">
-            <h3>Be There For Me</h3>
+            <h3>삐그덕 (Walk)</h3>
             <!-- <h2 id="title"></h2> -->
-            <h3>2024년 3월 1일 00시 기준</h3>
-            <h2>6639회</h2>
+            <h3>2024년 7월 15일 18시부터 시작 기준</h3>
+            <h2 id="title"></h2>
         </div>
         <div class="meloncard" style="display: block; margin-top: 50px;">
             <h4>내 멜론 스밍횟수가 궁금하다면?</h4>
@@ -90,16 +90,16 @@
         const now = new Date();
         const DD = now.getDate();
         const HH = now.getHours();
-        const VariableA = (24 * (DD - 1 + 31) * 3600) + (HH * 3600);
+        const VariableA = ((HH - 18) * 3600);
     
         // Define VariableB
-        const VariableB = 3605;
+        const VariableB = 3720;
     
         // Calculate VariableC
         const VariableC = VariableA / VariableB;
     
-        const title = VariableC * 4 + 887
-        const sectrack = VariableC * 3 + 665
+        const title = VariableC * 4
+        const sectrack = VariableC * 3
         const fsttrack = VariableC
 
         const Roundedtitle = Math.ceil(title);
