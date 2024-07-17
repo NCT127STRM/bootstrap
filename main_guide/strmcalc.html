@@ -90,7 +90,7 @@
         const now = new Date();
         const DD = now.getDate();
         const HH = now.getHours();
-        const VariableA = ((HH - 18) * 3600);
+        const VariableA = (24 * (DD - 16) * 3600) + (HH * 3600) + 6 * 3600
     
         // Define VariableB
         const VariableB = 3720;
