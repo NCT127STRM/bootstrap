@@ -68,14 +68,13 @@
     </header>
     <main class="center">
         <h2>현재까지 한 번도 안 끊어진<br>스밍 횟수는?</h2>
-        <h4 style="padding: 10px;">스밍횟수 계산기는 발매일 이후 현재 시즈니가 계신곳의 시간으로 계산된 스밍횟수 입니다 <br><br>
-        한국시간대로 설정하셔야 정확한 스밍횟수가 노출되는 점 양해 부탁드립니다💚</h4>
+        <h4 style="padding: 10px;">스밍횟수 계산기는 발매일 이후 현재 시즈니가 계신곳의 시간으로 계산된 스밍횟수 입니다</h4>
         <br>
         <div class="main-contents">
             <h3>BLINGY</h3>
             <h3>2026년 8월 24일 18시부터 시작 기준</h3>
             <!-- <h2 id="title"></h2> -->
-            <h2>5793</h2>
+            <h2 id="streamCount">0</h2>
         </div>
         <div class="meloncard" style="display: block; margin-top: 50px;">
             <h4>내 멜론 스밍횟수가 궁금하다면?</h4>
@@ -86,30 +85,23 @@
         <img src="./image/logo.jpg" alt="logo" id="header-logo">
     </footer>
     <script>
-        // Calculate VariableA
-        const now = new Date();
-        const DD = now.getDate();
-        const HH = now.getHours();
-        const VariableA = (24 * (DD - 16) * 3600) + (HH * 3600) + 6 * 3600
-    
-        // Define VariableB
-        const VariableB = 3720;
-    
-        // Calculate VariableC
-        const VariableC = VariableA / VariableB;
-    
-        const title = VariableC * 4
-        const sectrack = VariableC * 3
-        const fsttrack = VariableC
+        const startTime = Date.UTC(2026, 7, 24, 9, 0, 0);
 
-        const Roundedtitle = Math.ceil(title);
-        const Roundedsectrack = Math.ceil(sectrack);
-        const Roundedfsttrack = Math.ceil(fsttrack);
+        function updateStreamCount() {
+            const now = Date.now();
+            const diffMs = now - startTime;
+            if (diffMs < 0) {
+                document.getElementById("streamCount").textContent = "0";
+                return;
+            }
 
-        // Display VariableC in the body section
-        document.getElementById("title").textContent = `${Roundedtitle}`;
-        document.getElementById("sectrack").textContent = `나 홀로 집에 (Home Alone), 하얀 거짓말 (White Lie): ${Roundedsectrack}`
-        // document.getElementById("fsttrack").textContent = `Je Ne Sais Quoi, Love is a beauty, Misty, Real Life: ${Roundedfsttrack}`
+            const elapsedHours = Math.floor(diffMs / (1000 * 60 * 60));
+            const streamCount = elapsedHours * 4;
+            document.getElementById("streamCount").textContent = streamCount.toLocaleString();      
+        }
+
+        updateStreamCount();
+        setInterval(updateStreamCount, 1000);
     </script>  
 </body>
 </html>
